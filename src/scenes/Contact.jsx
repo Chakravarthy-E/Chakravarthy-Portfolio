@@ -76,7 +76,7 @@ const Contact = () => {
             method="POST"
           >
             <input
-              className="w-full bg-blue font-semibold placeholder-black p-3"
+              className="w-full bg-skyblue font-semibold placeholder-black p-3 rounded-md"
               type="text"
               placeholder="NAME"
               {...register("name", {
@@ -92,7 +92,7 @@ const Contact = () => {
             )}
 
             <input
-              className="w-full bg-blue font-semibold placeholder-black p-3 mt-5"
+              className="w-full bg-skyblue font-semibold placeholder-black p-3 mt-5 rounded-md"
               type="text"
               placeholder="EMAIL"
               {...register("email", {
@@ -108,7 +108,7 @@ const Contact = () => {
             )}
 
             <textarea
-              className="w-full bg-blue font-semibold placeholder-black p-3 mt-5"
+              className="w-full bg-skyblue font-semibold placeholder-black p-3 mt-5 rounded-md"
               name="message"
               placeholder="MESSAGE"
               rows="4"
@@ -128,7 +128,7 @@ const Contact = () => {
             )}
 
             <button
-              className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
+              className="p-5 bg-gradient-rainblue rounded-md font-semibold text-deep-blue mt-2 hover:bg-red hover:text-white transition duration-500 font-righteous tracking-wide "
               type="submit"
             >
               SEND ME A MESSAGE

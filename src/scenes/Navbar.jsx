@@ -55,21 +55,21 @@ const Navbar = ({ isTopOfPage,selectedPage, setSelectedPage }) => {
           />
           </div>
         ) : (
-          <button className="rounded-full p-2" onClick={()=> setIsMenuToggled(!isMenuToggled)}>
+          <button className="rounded-md p-2 hover:bg-red" onClick={()=> setIsMenuToggled(!isMenuToggled)}>
            <img alt="menu-icon" src={MenuIcon} />
           </button>
         )}
         {/**mobile */}
         {!isAbovesSmallScreens && isMenuToggled && (
-            <div className="fixed right-0 bottom-0 h-full bg-blue w-[300px]">
+            <div className="fixed right-0 bottom-0 h-full bg-skyblue w-[300px]">
                 {/**close button */}
                 <div className="flex justify-end p-12 ">
                 <button onClick={()=> setIsMenuToggled(!isMenuToggled)}>
-                    <img src={CloseIcon} alt="close icon" />
+                    <img src={CloseIcon} alt="close icon" className="rounded-sm hover:bg-red" />
                 </button>
                 </div>
                 {/**Menu items */}
-                <div className="flex flex-col gap-10 ml-[33%] text-2xl text-deep-blue">
+                <div className="flex flex-col gap-10 ml-[33%] text-1xl text-white">
                 <Link
                 page = "Home"
                 selectedPage = {selectedPage}

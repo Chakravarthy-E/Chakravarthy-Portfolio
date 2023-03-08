@@ -46,13 +46,13 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="text-4xl font-righteous tracking-wider z-10 text-center md:text-start hover:text-lightgreen ml-[-1%]">
-            CHAKRAVARTHY<span className="text-lightgreen hover:text-cream ml-4">E</span>
+          <p className="text-4xl font-righteous tracking-wider z-10 text-center md:text-start text-blue  ml-[-1%]">
+            CHAKRAVARTHY<span className="text-lightgreen hover:text-name ml-4 text-blue">E</span>
           </p>
-          <p className="text-3xl font-righteous tracking-wider z-10 text-center md:text-start">Full Stack <span className="text-lightgreen">Developer</span></p>
-          <p className="mt-10 mb-7 text-sm text-center md:text-start ">
+          <p className="text-3xl font-righteous tracking-wider z-10 text-center md:text-start text-h1">Full Stack <span className="text-red">Developer</span></p>
+          <p className="mt-10 mb-7 text-sm text-center md:text-start font-openSans tracking-wide">
             A passionate individual who always thrives to work on end to end
-            products whick develop sustainable and scalable social and technical
+            products which develop sustainable and scalable social and technical
             systems to create impact
           </p>
         </motion.div>
@@ -69,7 +69,7 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <AnchorLink
-            className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
+            className="bg-gradient-rainblue text-deep-blue rounded-md py-3 px-7 font-semibold
            hover:bg-blue hover:text-white transition duration-500 font-righteous"
             onClick={() =>
               setSelectedPage("Contact")
