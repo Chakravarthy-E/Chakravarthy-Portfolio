@@ -8,6 +8,7 @@ import MySkills from "./scenes/MySkills";
 import Projects from "./scenes/Projects";
 import {motion} from "framer-motion"
 import Footer from "./scenes/Footer"
+import { logo } from "./assets";
 import Contact from "./scenes/Contact"
 
 

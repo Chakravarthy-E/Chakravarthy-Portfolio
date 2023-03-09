@@ -25,15 +25,22 @@ import project6 from "./project-6.jpeg"
 import project7 from "./project-7.jpeg"
 import contact from "./contact.svg"
 import SkillSVG from './skills.svg'
+import calculator from "./calculator.jpg"
+import rockpaperscissors from "./rockpaperscissors.jpg"
+import todolist from "./todolist.jpg";
+import logo from "./C-icon.png"
 
 
 export {profile, CloseIcon, MenuIcon,menuIcon,Linkedin,Instagram,Github,HTML,CSS,JS,REACTLOGO,MONGODB,MYSQL,NODEJS,BOOTSTRAP,TAILWINDCSS,
     project1,
     project4,
     project5,
+    logo,
     project3,
     project6,
     project2,
+    rockpaperscissors,
+    todolist,
     project7,
     contact,
-SkillSVG}
+SkillSVG,calculator}

@@ -1,12 +1,8 @@
 import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
-import { project1 } from "../assets";
-import { project2 } from "../assets";
-import { project3 } from "../assets";
-import { project4 } from "../assets";
-import { project5 } from "../assets";
-import { project6 } from "../assets";
-import { project7 } from "../assets";
+import { calculator } from "../assets";
+import { rockpaperscissors } from "../assets";
+import { todolist } from "../assets";
 
 const container = {
   hidden: {},
@@ -52,7 +48,7 @@ const Projects = () => {
       >
         <div>
           <p className="font-righteous font-semibold text-4xl">
-            MY <span className="text-red-500">PROJECTS</span>
+            MY <span className="text-red">PROJECTS</span>
           </p>
           <div className="flex justify-center mt-5">
             <LineGradient width="w-1/3" />
@@ -73,21 +69,49 @@ const Projects = () => {
           transition={{ duration: 0.5 }}
           variants={container}
         >
-          <div
-            className="flex justify-center text-center items-center p-10 bg-red-600
-        max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
-          >
-            BEAUTIFUL USER INTERFACES
-          </div>
-          <img src={project1} alt="project1" />
-          <img src={project2} alt="project2" />
+        <div className="max-w-sm rounded-3xl overflow-hidden shadow-lg border-white bg-white mb-1 m-1">
+        <img className="w-full h-[240px]" src={calculator} alt="Sunset in the mountains" />
+        <div className="px-6 py-4">
+          <div className="font-sm font-righteous text-xl mb-2 text-deep-blue flex justify-center">Calculator App</div>
+          <p className="text-gray-700 text-base">
+          </p>
+        </div>
+        <div className="pt-1 pb-2 flex justify-center">
+          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2  hover:bg-red hover:text-white"><a href="#DEMO">Demo</a></span>
+          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 ml-27 mb-2  hover:bg-red hover:text-white"><a href="#github">Github</a></span>
+        </div>
+      </div>
+
+
+        <div className="max-w-sm rounded-3xl overflow-hidden shadow-lg border-white bg-white mb-1 m-1">
+        <img className="w-full h-[240px]" src={rockpaperscissors} alt="rockpaparscissors" />
+        <div className="px-6 py-4">
+          <div className="font-sm  font-righteous text-xl mb-2 text-deep-blue flex justify-center">Rock Paper Scissors App</div>
+          <p className="text-gray-700 text-base">
+          </p>
+        </div>
+        <div className="pt-1 pb-2 flex justify-center">
+          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-red hover:text-white"><a href="#DEMO">Demo</a></span>
+          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 ml-27 mb-2 hover:bg-red hover:text-white"><a href="#github">Github</a></span>
+        </div>
+      </div>
+
+        <div className="max-w-sm rounded-3xl overflow-hidden shadow-lg border-white bg-white mb-1 m-1">
+        <img className="w-full h-[240px]" src={todolist} alt="todolist" />
+        <div className="px-6 py-4">
+          <div className="font-sm font-righteous text-xl mb-2 text-deep-blue flex justify-center">Todo List App</div>
+          <p className="text-gray-700 text-base">
+          </p>
+        </div>
+        <div className="pt-1 pb-2 flex justify-center">
+          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-red hover:text-white"><a href="#DEMO">Demo</a></span>
+          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 ml-27 mb-2 hover:bg-red hover:text-white"><a href="#github">Github</a></span>
+        </div>
+      </div>
           {/**row 2 */}
-          <img src={project3} alt="project3" />
-          <img src={project4} alt="project4" />
-          <img src={project5} alt="project5" />
-        {/**row */}
-          <img src={project6} alt="project6" />
-          <img src={project7} alt="project7" />
+     
+        {/**row 3 */}
+       
         </motion.div>
       </div>
     </section>

@@ -33,8 +33,8 @@ const Contact = () => {
         className="flex justify-end w-full"
       >
         <div>
-          <p className="font-righteous font-semibold text-4xl">
-            <span className="text-yellow">CONTACT ME</span> TO GET STARTED
+          <p className="font-righteous font-semibold text-4xl text-red" >
+            <span className="text-white">CONTACT ME</span> TO GET STARTED
           </p>
           <div className="flex md:justify-end my-5">
             <LineGradient width="mx-auto w-1/2" />
