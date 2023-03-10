@@ -1,4 +1,3 @@
-import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
 import { calculator } from "../assets";
 import { rockpaperscissors } from "../assets";
@@ -50,9 +49,6 @@ const Projects = () => {
           <p className="font-righteous font-semibold text-4xl">
             MY <span className="text-red">PROJECTS</span>
           </p>
-          <div className="flex justify-center mt-5">
-            <LineGradient width="w-1/3" />
-          </div>
         </div>
         <p className="mt-10 mb-10">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
@@ -70,7 +66,7 @@ const Projects = () => {
           variants={container}
         >
         <div className="max-w-sm rounded-3xl overflow-hidden shadow-lg border-white bg-white mb-1 m-1">
-        <img className="w-full h-[240px]" src={calculator} alt="Sunset in the mountains" />
+        <img className="w-full h-[240px]" src={calculator} alt="Calculator App" />
         <div className="px-6 py-4">
           <div className="font-sm font-righteous text-xl mb-2 text-deep-blue flex justify-center">Calculator App</div>
           <p className="text-gray-700 text-base">

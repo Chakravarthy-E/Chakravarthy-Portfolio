@@ -33,10 +33,7 @@ const MySkills = () => {
         <p className="font-righteous font-semibold text-4xl mb-5">
             MY TECHNICAL<span className="text-red"> SKILLS</span>
           </p>
-          <div className="flex justify-center mt-5">
-          <LineGradient width="w-1/3" />
-          </div>
-          <p className="mt-10 mb-7">
+          <p className="mt-5 mb-7">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
             commodi porro enim asperiores mol.
           </p>

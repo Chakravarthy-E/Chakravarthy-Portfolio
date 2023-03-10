@@ -49,7 +49,7 @@ const Landing = ({ setSelectedPage }) => {
           <p className="text-4xl font-righteous tracking-wider z-10 text-center md:text-start text-blue  ml-[-1%]">
             CHAKRAVARTHY<span className="text-lightgreen hover:text-name ml-4 text-blue">E</span>
           </p>
-          <p className="text-2xl font-righteous tracking-wider z-10 text-center md:text-start text-h1">Full Stack <span className="text-red">Developer</span></p>
+          <p className="text-2xl font-righteous tracking-wider z-10 text-center md:text-start text-red">Full Stack <span className="text-red">Developer</span></p>
           <p className="mt-10 mb-7 text-sm text-center md:text-start font-openSans tracking-wide">
             A passionate individual who always thrives to work on end to end
             products which develop sustainable and scalable social and technical

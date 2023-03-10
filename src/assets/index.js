@@ -29,6 +29,7 @@ import calculator from "./calculator.jpg"
 import rockpaperscissors from "./rockpaperscissors.jpg"
 import todolist from "./todolist.jpg";
 import logo from "./C-icon.png"
+import profile_pic from "./profile-pic.jpg"
 
 
 export {profile, CloseIcon, MenuIcon,menuIcon,Linkedin,Instagram,Github,HTML,CSS,JS,REACTLOGO,MONGODB,MYSQL,NODEJS,BOOTSTRAP,TAILWINDCSS,
@@ -43,4 +44,5 @@ export {profile, CloseIcon, MenuIcon,menuIcon,Linkedin,Instagram,Github,HTML,CSS
     todolist,
     project7,
     contact,
+    profile_pic,
 SkillSVG,calculator}
