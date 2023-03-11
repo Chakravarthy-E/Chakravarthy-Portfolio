@@ -9,7 +9,6 @@ import Projects from "./scenes/Projects";
 import {motion} from "framer-motion"
 import Footer from "./scenes/Footer"
 import Contact from "./scenes/Contact"
-import About from "./scenes/About";
 
 
 
@@ -51,18 +50,7 @@ function App() {
         </motion.div>
       </div>
 
-      <LineGradient />
 
-
-      <div className="w-5/6 mx-auto">
-      <motion.div
-      margin="0 0 -200px 0"
-      amount="all"
-      onViewportEnter={() => setSelectedPage("About")}
-    >
-        <About />
-      </motion.div>
-      </div>
 
       <LineGradient />
 

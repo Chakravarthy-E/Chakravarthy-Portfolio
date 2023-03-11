@@ -1,8 +1,6 @@
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-// import { Profiler } from "react";
-// import { profile } from "../assets";
 import { menuIcon } from "../assets";
 import SocialMediaIcons from "../components/SocialMediaIcons";
 const Landing = ({ setSelectedPage }) => {
@@ -77,6 +75,15 @@ const Landing = ({ setSelectedPage }) => {
             href="#contact"
           >
             CONTACT ME
+          </AnchorLink>
+
+          <AnchorLink
+            className="bg-gradient-rainblue text-deep-blue rounded-md py-3 px-7 font-semibold
+           hover:bg-blue hover:text-white transition duration-500 font-righteous ml-3"
+            /**change here contact to Conctact if error occurs */
+            href="http://google.com/"
+          >
+            RESUME
           </AnchorLink>
      
         </motion.div>
