@@ -44,7 +44,7 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="text-4xl font-righteous tracking-wider z-10 text-center md:text-start text-blue  ml-[-1%]">
+          <p className="text-4xl font-righteous tracking-wider z-10 text-center md:text-start text-blue  ml-[-1%] transform h-7 bg-blue-400 w-1/5 hover:bg-blue-600 transition duration-500 hover:scale-125 mb-4">
             CHAKRAVARTHY<span className="text-lightgreen hover:text-name ml-4 text-blue">E</span>
           </p>
           <p className="text-2xl font-righteous tracking-wider z-10 text-center md:text-start text-red">Full Stack <span className="text-red">Developer</span></p>
@@ -67,8 +67,8 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <AnchorLink
-            className="bg-gradient-rainblue text-deep-blue rounded-md py-3 px-7 font-semibold
-           hover:bg-blue hover:text-white transition duration-500 font-righteous"
+            className="bg-white text-deep-blue rounded-md py-3 px-7 font-semibold
+           hover:bg-skyblue hover:text-black transition duration-500 font-righteous "
             onClick={() =>
               setSelectedPage("Contact")
             } /**change here contact to Conctact if error occurs */
@@ -78,8 +78,8 @@ const Landing = ({ setSelectedPage }) => {
           </AnchorLink>
 
           <AnchorLink
-            className="bg-gradient-rainblue text-deep-blue rounded-md py-3 px-7 font-semibold
-           hover:bg-blue hover:text-white transition duration-500 font-righteous ml-3"
+            className="bg-white text-deep-blue rounded-md py-3 px-7 font-semibold
+           hover:bg-skyblue hover:text-black transition duration-500 font-righteous ml-3"
             /**change here contact to Conctact if error occurs */
             href="http://google.com/"
           >

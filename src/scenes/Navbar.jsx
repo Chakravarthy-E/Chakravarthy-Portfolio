@@ -24,7 +24,7 @@ const Navbar = ({ isTopOfPage,selectedPage, setSelectedPage }) => {
   const navbarBackground = isTopOfPage ? "" : "bg-red";
 
   return (
-    <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
+    <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6 bg-violet pt-3 pb-2`}>
       <div className="flex items-center justify-between mx-auto w-5/6">
       <AnchorLink onClick = {()=>setSelectedPage("home")} href="#home">
       <h4 className={`font-pacifico text-2xl hover:text-red text-cream font-bold`}>Chakri</h4>
@@ -32,7 +32,7 @@ const Navbar = ({ isTopOfPage,selectedPage, setSelectedPage }) => {
 
         {/**Desktop nav */}
         {isAbovesSmallScreens ? (
-          <div className="flex justify-between gap-16 font-opansans text-sm font-semibold">
+          <div className="flex justify-between gap-16 font-opansans text-sm font-semibold ">
           <Link
           page = "Home"
           selectedPage = {selectedPage}
@@ -56,17 +56,17 @@ const Navbar = ({ isTopOfPage,selectedPage, setSelectedPage }) => {
           />
           </div>
         ) : (
-          <button className="rounded-md p-2 hover:bg-red" onClick={()=> setIsMenuToggled(!isMenuToggled)}>
+          <button className="rounded-md p-2" onClick={()=> setIsMenuToggled(!isMenuToggled)}>
            <img alt="menu-icon" src={MenuIcon} />
           </button>
         )}
         {/**mobile */}
         {!isAbovesSmallScreens && isMenuToggled && (
-            <div className="fixed right-0 bottom-0 h-full bg-skyblue w-[300px]">
+            <div className="fixed right-0 bottom-0 h-full bg-violet w-[300px]">
                 {/**close button */}
                 <div className="flex justify-end p-12 ">
                 <button onClick={()=> setIsMenuToggled(!isMenuToggled)}>
-                    <img src={CloseIcon} alt="close icon" className="rounded-sm hover:bg-red" />
+                    <img src={CloseIcon} alt="close icon" className="rounded-sm" />
                 </button>
                 </div>
                 {/**Menu items */}

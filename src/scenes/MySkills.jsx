@@ -16,7 +16,7 @@ const MySkills = () => {
   return (
     <section id="skills" className="pt-10 pb-24">
       {/**HEADER AND IMAGE SECTION*/}
-      <div className="md:flex md:justify-between md:gap-16 mt-32">
+      <div className="md:flex md:justify-between md:gap-16 mt-20">
         <motion.div
           className="md:w-1/3"
           initial="hidden"
@@ -29,18 +29,14 @@ const MySkills = () => {
           }}
         >
         <div>
-        <p className="font-righteous font-semibold text-4xl mb-5">
+        <p className="font-righteous font-semibold text-4xl mb-2 mt-[-20%] ml-[20%]">
             MY TECHNICAL<span className="text-red"> SKILLS</span>
-          </p>
-          <p className="mt-5 mb-7">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe
-            commodi porro enim asperiores mol.
           </p>
         </div>
           
         </motion.div>
-        <div className="mt-16 md:mt-0">
-            <div className="flex flex-wrap mt-5 justify-center md:justify-start my-10 gap-9">
+        <div className="mt-20 md:mt-0">
+            <div className="flex flex-wrap mt-20 justify-center md:justify-start my-10 gap-9">
                     <img src={HTML} alt="html" />
                     <img src={CSS} alt="css" />
                     <img src={JS} alt="javaScript" />

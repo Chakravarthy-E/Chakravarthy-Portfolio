@@ -12,7 +12,6 @@ import Contact from "./scenes/Contact"
 
 
 
-
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
   const [isTopOfPage, setIsTopOfPage] = useState(true);
