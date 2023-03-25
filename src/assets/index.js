@@ -25,11 +25,12 @@ import project6 from "./project-6.jpeg"
 import project7 from "./project-7.jpeg"
 import contact from "./contact.svg"
 import SkillSVG from './skills.svg'
-import calculator from "./calculator.jpg"
+import calculator from "./calculator.png"
 import rockpaperscissors from "./rockpaperscissors.jpg"
 import todolist from "./todolist.jpg";
 import logo from "./C-icon.png"
 import profile_pic from "./profile-pic.jpg"
+import rockpaper from "./rockpaper.png"
 
 
 export {profile, CloseIcon, MenuIcon,menuIcon,Linkedin,Instagram,Github,HTML,CSS,JS,REACTLOGO,MONGODB,MYSQL,NODEJS,BOOTSTRAP,TAILWINDCSS,
@@ -45,4 +46,5 @@ export {profile, CloseIcon, MenuIcon,menuIcon,Linkedin,Instagram,Github,HTML,CSS
     project7,
     contact,
     profile_pic,
+    rockpaper,
 SkillSVG,calculator}

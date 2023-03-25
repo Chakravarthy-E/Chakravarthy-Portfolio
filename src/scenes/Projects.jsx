@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { calculator } from "../assets";
-import { rockpaperscissors } from "../assets";
+import { rockpaper } from "../assets";
 import { todolist } from "../assets";
 
 const container = {
@@ -75,7 +75,7 @@ const Projects = () => {
       </div>
 
         <div className="max-w-sm rounded-md overflow-hidden shadow-lg border-white bg-violet mb-1 m-1">
-        <img className="w-full h-[240px]" src={rockpaperscissors} alt="rockpaparscissors" />
+        <img className="w-full h-[240px]" src={rockpaper} alt="rockpaparscissors" />
         <div className="px-6 py-4">
           <div className="font-sm  font-righteous text-xl mb-2 text-white flex justify-center">Rock Paper Scissors App</div>
           <p className="text-gray-700 text-base">

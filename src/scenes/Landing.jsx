@@ -79,7 +79,7 @@ const Landing = ({ setSelectedPage }) => {
 
           <AnchorLink
             className="bg-white text-deep-blue rounded-md py-3 px-7 font-semibold
-           hover:bg-skyblue hover:text-black transition duration-500 font-righteous ml-3"
+           hover:bg-skyblue hover:text-black transition duration-500 font-righteous ml-3 hover:scale-10"
             /**change here contact to Conctact if error occurs */
             href="http://google.com/"
           >
