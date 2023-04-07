@@ -61,48 +61,70 @@ const Projects = () => {
           transition={{ duration: 0.5 }}
           variants={container}
         >
-        <div className="max-w-sm rounded-md overflow-hidden shadow-lg border-white bg-violet mb-1 m-1">
-        <img className="w-full h-[240px]" src={calculator} alt="Calculator App" />
-        <div className="px-6 py-4">
-          <div className="font-sm font-righteous text-xl mb-2 text-white flex justify-center">Calculator App</div>
-          <p className="text-gray-700 text-base">
-          </p>
-        </div>
-        <div className="pt-1 pb-2 flex justify-center">
-          <span className="inline-block bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2  hover:bg-skyblue hover:text-black"><a href="#DEMO">Demo</a></span>
-          <span className="inline-block bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2 ml-27 mb-2  hover:bg-skyblue hover:text-black"><a href="#github">Github</a></span>
-        </div>
-      </div>
+          <div className="max-w-sm rounded-md overflow-hidden shadow-lg border-white bg-violet mb-1 m-1">
+            <img
+              className="w-full h-[240px]"
+              src={calculator}
+              alt="Calculator App"
+            />
+            <div className="px-6 py-4">
+              <div className="font-sm font-righteous text-xl mb-2 text-white flex justify-center">
+                Calculator App
+              </div>
+              <p className="text-gray-700 text-base"></p>
+            </div>
+            <div className="pt-1 pb-2 flex justify-center">
+              <span className="inline-block bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2  hover:bg-skyblue hover:text-black">
+                <a href="#DEMO">Demo</a>
+              </span>
+              <span className="inline-block bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2 ml-27 mb-2  hover:bg-skyblue hover:text-black">
+                <a href="#github">Github</a>
+              </span>
+            </div>
+          </div>
 
-        <div className="max-w-sm rounded-md overflow-hidden shadow-lg border-white bg-violet mb-1 m-1">
-        <img className="w-full h-[240px]" src={rockpaper} alt="rockpaparscissors" />
-        <div className="px-6 py-4">
-          <div className="font-sm  font-righteous text-xl mb-2 text-white flex justify-center">Rock Paper Scissors App</div>
-          <p className="text-gray-700 text-base">
-          </p>
-        </div>
-        <div className="pt-1 pb-2 flex justify-center">
-          <span className="inline-block bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-skyblue hover:text-black"><a href="#DEMO">Demo</a></span>
-          <span className="inline-block bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2 ml-27 mb-2 hover:bg-skyblue hover:text-black"><a href="#github">Github</a></span>
-        </div>
-      </div>
+          <div className="max-w-sm rounded-md overflow-hidden shadow-lg border-white bg-violet mb-1 m-1">
+            <img
+              className="w-full h-[240px]"
+              src={rockpaper}
+              alt="rockpaparscissors"
+            />
+            <div className="px-6 py-4">
+              <div className="font-sm  font-righteous text-xl mb-2 text-white flex justify-center">
+                Rock Paper Scissors App
+              </div>
+              <p className="text-gray-700 text-base"></p>
+            </div>
+            <div className="pt-1 pb-2 flex justify-center">
+              <span className="inline-block bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-skyblue hover:text-black">
+                <a href="#DEMO">Demo</a>
+              </span>
+              <span className="inline-block bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2 ml-27 mb-2 hover:bg-skyblue hover:text-black">
+                <a href="#github">Github</a>
+              </span>
+            </div>
+          </div>
 
-        <div className="max-w-sm rounded-md overflow-hidden shadow-lg border-white bg-violet mb-1 m-1">
-        <img className="w-full h-[240px]" src={todolist} alt="todolist" />
-        <div className="px-6 py-4">
-          <div className="font-sm font-righteous text-xl mb-2 text-deep-white flex justify-center">Todo List App</div>
-          <p className="text-gray-700 text-base">
-          </p>
-        </div>
-        <div className="pt-1 pb-2 flex justify-center">
-          <span className="inline-block bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-skyblue hover:text-black"><a href="#DEMO">Demo</a></span>
-          <span className="inline-block bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2 ml-27 mb-2 hover:bg-skyblue hover:text-black"><a href="#github">Github</a></span>
-        </div>
-      </div>
+          <div className="max-w-sm rounded-md overflow-hidden shadow-lg border-white bg-violet mb-1 m-1">
+            <img className="w-full h-[240px]" src={todolist} alt="todolist" />
+            <div className="px-6 py-4">
+              <div className="font-sm font-righteous text-xl mb-2 text-deep-white flex justify-center">
+                Todo List App
+              </div>
+              <p className="text-gray-700 text-base"></p>
+            </div>
+            <div className="pt-1 pb-2 flex justify-center">
+              <span className="inline-block bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-skyblue hover:text-black">
+                <a href="#DEMO">Demo</a>
+              </span>
+              <span className="inline-block bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2 ml-27 mb-2 hover:bg-skyblue hover:text-black">
+                <a href="#github">Github</a>
+              </span>
+            </div>
+          </div>
           {/**row 2 */}
-     
-        {/**row 3 */}
-       
+
+          {/**row 3 */}
         </motion.div>
       </div>
     </section>

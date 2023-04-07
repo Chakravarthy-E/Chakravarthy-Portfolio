@@ -32,7 +32,7 @@ const Contact = () => {
         className="flex justify-end w-full"
       >
         <div>
-          <p className="font-righteous font-semibold text-4xl text-red mt-[-20%]" >
+          <p className="font-righteous font-semibold text-4xl text-red mt-[-20%]">
             <span className="text-white">CONTACT ME</span> TO GET STARTED
           </p>
         </div>
