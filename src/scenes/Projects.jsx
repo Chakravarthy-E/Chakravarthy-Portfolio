@@ -61,9 +61,9 @@ const Projects = () => {
           transition={{ duration: 0.5 }}
           variants={container}
         >
-          <div className="max-w-sm rounded-md overflow-hidden shadow-lg border-white bg-violet mb-1 m-1">
+        <div className="max-w-md mx-auto bg-violet rounded-xl shadow-md overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
             <img
-              className="w-full h-[240px]"
+              className="w-[332px] h-[240px]"
               src={calculator}
               alt="Calculator App"
             />
@@ -74,18 +74,18 @@ const Projects = () => {
               <p className="text-gray-700 text-base"></p>
             </div>
             <div className="pt-1 pb-2 flex justify-center">
-              <span className="inline-block bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2  hover:bg-skyblue hover:text-black">
+              <span className="inline-block bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2  hover:bg-red hover:text-white">
                 <a href="#DEMO">Demo</a>
               </span>
-              <span className="inline-block bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2 ml-27 mb-2  hover:bg-skyblue hover:text-black">
+              <span className="inline-block bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2 ml-27 mb-2  hover:bg-red hover:text-white">
                 <a href="#github">Github</a>
               </span>
             </div>
           </div>
 
-          <div className="max-w-sm rounded-md overflow-hidden shadow-lg border-white bg-violet mb-1 m-1">
+          <div className="max-w-md mx-auto bg-violet rounded-xl shadow-md overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
             <img
-              className="w-full h-[240px]"
+              className="w-[332px] h-[240px]"
               src={rockpaper}
               alt="rockpaparscissors"
             />
@@ -96,17 +96,17 @@ const Projects = () => {
               <p className="text-gray-700 text-base"></p>
             </div>
             <div className="pt-1 pb-2 flex justify-center">
-              <span className="inline-block bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-skyblue hover:text-black">
+              <span className="inline-block bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-red hover:text-white">
                 <a href="#DEMO">Demo</a>
               </span>
-              <span className="inline-block bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2 ml-27 mb-2 hover:bg-skyblue hover:text-black">
+              <span className="inline-block bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2 ml-27 mb-2 hover:bg-red hover:text-white">
                 <a href="#github">Github</a>
               </span>
             </div>
           </div>
 
-          <div className="max-w-sm rounded-md overflow-hidden shadow-lg border-white bg-violet mb-1 m-1">
-            <img className="w-full h-[240px]" src={todolist} alt="todolist" />
+          <div className="max-w-md mx-auto bg-violet rounded-xl shadow-md overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
+            <img className="w-[332px] h-[240px]" src={todolist} alt="todolist" />
             <div className="px-6 py-4">
               <div className="font-sm font-righteous text-xl mb-2 text-deep-white flex justify-center">
                 Todo List App
@@ -114,10 +114,10 @@ const Projects = () => {
               <p className="text-gray-700 text-base"></p>
             </div>
             <div className="pt-1 pb-2 flex justify-center">
-              <span className="inline-block bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-skyblue hover:text-black">
+              <span className="inline-block bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-red hover:text-white">
                 <a href="#DEMO">Demo</a>
               </span>
-              <span className="inline-block bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2 ml-27 mb-2 hover:bg-skyblue hover:text-black">
+              <span className="inline-block bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2 ml-27 mb-2 hover:bg-red hover:text-white">
                 <a href="#github">Github</a>
               </span>
             </div>

@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { menuIcon } from "../assets";
 import SocialMediaIcons from "../components/SocialMediaIcons";
+import "./landing.css"
 const Landing = ({ setSelectedPage }) => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 
@@ -44,10 +45,10 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="text-4xl font-righteous tracking-wider z-10 text-center md:text-start text-skyblue  ml-[-1%] transform h-7 bg-blue-400 w-1/5 hover:bg-blue-600 transition duration-500 hover:scale-125 mb-4">
-            CHAKRAVARTHY<span className="text-lightgreen hover:text-name ml-4 text-skyblue">E</span>
+          <p className="text-4xl font-righteous tracking-wider z-10 text-center md:text-start text-red  ml-[-1%] transform h-7 bg-blue-400 w-1/5 hover:bg-blue-600 transition duration-500 hover:scale-125 mb-4">
+            CHAKRAVARTHY<span className="text-lightgreen hover:text-name ml-4 text-red">E</span>
           </p>
-          <p className="text-2xl font-righteous tracking-wider z-10 text-center md:text-start text-red">Full Stack Developer</p>
+          <p className="text-2xl font-righteous tracking-wider z-10 text-center md:text-start text-skyblue">Full Stack Developer</p>
           <p className="mt-10 mb-7 text-sm text-center md:text-start font-openSans tracking-wide">
             A passionate individual who always thrives to work on end to end
             products which develop sustainable and scalable social and technical
@@ -68,7 +69,7 @@ const Landing = ({ setSelectedPage }) => {
         >
           <AnchorLink
             className="bg-white text-deep-blue rounded-md py-3 px-7 font-semibold
-           hover:bg-skyblue hover:text-black transition duration-500 font-righteous "
+           hover:bg-red hover:text-white transition duration-500 font-righteous "
             onClick={() =>
               setSelectedPage("Contact")
             } /**change here contact to Conctact if error occurs */
@@ -79,7 +80,7 @@ const Landing = ({ setSelectedPage }) => {
 
           <AnchorLink
             className="bg-white text-deep-blue rounded-md py-3 px-7 font-semibold
-           hover:bg-skyblue hover:text-black transition duration-500 font-righteous ml-3 hover:scale-10"
+           hover:bg-red hover:text-white transition duration-500 font-righteous ml-3 hover:scale-10"
             /**change here contact to Conctact if error occurs */
             href="http://google.com/"
           >
@@ -88,7 +89,7 @@ const Landing = ({ setSelectedPage }) => {
      
         </motion.div>
         <motion.div
-        className="flex mt-5 justify-center md:justify-start"
+        className="flex mt-5 justify-center md:justify-start ml-1"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}

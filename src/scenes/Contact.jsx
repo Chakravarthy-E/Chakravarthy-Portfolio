@@ -124,7 +124,7 @@ const Contact = () => {
             )}
 
             <button
-              className="p-5 bg-white rounded-md font-semibold text-deep-blue mt-2 hover:bg-skyblue hover:text-black transition duration-500 font-righteous tracking-wide ml-1 "
+              className="p-5 bg-white rounded-md font-semibold text-deep-blue mt-2 hover:bg-red hover:text-white transition duration-500 font-righteous tracking-wide ml-1 "
               type="submit"
             >
               SEND ME A MESSAGE
