@@ -45,11 +45,11 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="text-4xl font-righteous tracking-wider z-10 text-center md:text-start text-red  ml-[-1%] transform h-7 bg-blue-400 w-1/5 hover:bg-blue-600 transition duration-500 hover:scale-125 mb-4">
-            CHAKRAVARTHY<span className="text-lightgreen hover:text-name ml-4 text-red">E</span>
+          <p className="text-4xl font-righteous tracking-wider z-10 text-center md:text-start text-purple  ml-[-1%] transform h-7 bg-blue-400 w-1/5 hover:bg-blue-600 transition duration-500 hover:scale-125 mb-4">
+            CHAKRAVARTHY<span className="text-lightgreen hover:text-name ml-4 text-purple">E</span>
           </p>
-          <p className="text-2xl font-righteous tracking-wider z-10 text-center md:text-start text-skyblue">Full Stack Developer</p>
-          <p className="mt-10 mb-7 text-sm text-center md:text-start font-openSans tracking-wide">
+          <p className="text-1xl font-righteous tracking-wider z-10 text-center md:text-start text-white">Full Stack Developer</p>
+          <p className="mt-10 mb-7 text-sm text-center md:text-start font-righteous tracking-wide">
             A passionate individual who always thrives to work on end to end
             products which develop sustainable and scalable social and technical
             systems to create impact
@@ -69,7 +69,7 @@ const Landing = ({ setSelectedPage }) => {
         >
           <AnchorLink
             className="bg-white text-deep-blue rounded-md py-3 px-7 font-semibold
-           hover:bg-red hover:text-white transition duration-500 font-righteous "
+           hover:bg-white hover:text-purple  transition duration-500 font-righteous "
             onClick={() =>
               setSelectedPage("Contact")
             } /**change here contact to Conctact if error occurs */
@@ -80,7 +80,7 @@ const Landing = ({ setSelectedPage }) => {
 
           <AnchorLink
             className="bg-white text-deep-blue rounded-md py-3 px-7 font-semibold
-           hover:bg-red hover:text-white transition duration-500 font-righteous ml-3 hover:scale-10"
+           hover:bg-white hover:text-purple  transition duration-500 font-righteous ml-3 hover:scale-10"
             /**change here contact to Conctact if error occurs */
             href="http://google.com/"
           >

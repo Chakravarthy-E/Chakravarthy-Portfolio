@@ -47,7 +47,7 @@ const Projects = () => {
       >
         <div>
           <p className="font-righteous font-semibold text-4xl mb-10 mt-[-20%]">
-            MY <span className="text-red">PROJECTS</span>
+            MY <span className="text-purple">PROJECTS</span>
           </p>
         </div>
       </motion.div>
@@ -61,63 +61,63 @@ const Projects = () => {
           transition={{ duration: 0.5 }}
           variants={container}
         >
-        <div className="max-w-md mx-auto bg-violet rounded-xl shadow-md overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
+        <div className="max-w-md mx-auto bg-purple rounded-xl shadow-md border border-white overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
             <img
               className="w-[332px] h-[240px]"
               src={calculator}
               alt="Calculator App"
             />
             <div className="px-6 py-4">
-              <div className="font-sm font-righteous text-xl mb-2 text-white flex justify-center">
+              <div className="font-sm font-righteous text-xl text-black flex justify-center">
                 Calculator App
               </div>
               <p className="text-gray-700 text-base"></p>
             </div>
             <div className="pt-1 pb-2 flex justify-center">
-              <span className="inline-block bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2  hover:bg-red hover:text-white">
+              <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 mb-1  hover:bg-black hover:text-purple">
                 <a href="#DEMO">Demo</a>
               </span>
-              <span className="inline-block bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2 ml-27 mb-2  hover:bg-red hover:text-white">
+              <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 ml-27 mb-1  hover:bg-black hover:text-purple">
                 <a href="#github">Github</a>
               </span>
             </div>
           </div>
 
-          <div className="max-w-md mx-auto bg-violet rounded-xl shadow-md overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
+          <div className="max-w-md mx-auto bg-purple border border-white rounded-xl shadow-md overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
             <img
               className="w-[332px] h-[240px]"
               src={rockpaper}
               alt="rockpaparscissors"
             />
             <div className="px-6 py-4">
-              <div className="font-sm  font-righteous text-xl mb-2 text-white flex justify-center">
+              <div className="font-sm  font-righteous text-xl  text-black flex justify-center">
                 Rock Paper Scissors App
               </div>
               <p className="text-gray-700 text-base"></p>
             </div>
             <div className="pt-1 pb-2 flex justify-center">
-              <span className="inline-block bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-red hover:text-white">
+              <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 mb-1 hover:bg-black hover:text-purple">
                 <a href="#DEMO">Demo</a>
               </span>
-              <span className="inline-block bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2 ml-27 mb-2 hover:bg-red hover:text-white">
+              <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 ml-27 mb-1 hover:bg-black hover:text-purple">
                 <a href="#github">Github</a>
               </span>
             </div>
           </div>
 
-          <div className="max-w-md mx-auto bg-violet rounded-xl shadow-md overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
+          <div className="max-w-md mx-auto bg-purple rounded-xl border border-white shadow-md overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
             <img className="w-[332px] h-[240px]" src={todolist} alt="todolist" />
             <div className="px-6 py-4">
-              <div className="font-sm font-righteous text-xl mb-2 text-deep-white flex justify-center">
+              <div className="font-sm font-righteous text-xl text-black flex justify-center">
                 Todo List App
               </div>
               <p className="text-gray-700 text-base"></p>
             </div>
             <div className="pt-1 pb-2 flex justify-center">
-              <span className="inline-block bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:bg-red hover:text-white">
+              <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 mb-1 hover:bg-black hover:text-purple">
                 <a href="#DEMO">Demo</a>
               </span>
-              <span className="inline-block bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2 ml-27 mb-2 hover:bg-red hover:text-white">
+              <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 ml-27 mb-1 hover:bg-black hover:text-purple">
                 <a href="#github">Github</a>
               </span>
             </div>

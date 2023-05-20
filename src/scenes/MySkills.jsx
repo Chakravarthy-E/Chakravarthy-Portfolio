@@ -30,7 +30,7 @@ const MySkills = () => {
         >
           <div>
             <p className="font-righteous font-semibold text-4xl mb-2 mt-[-20%] ml-[5%]">
-              MY TECHNICAL<span className="text-red"> SKILLS</span>
+              MY TECHNICAL<span className="text-purple"> SKILLS</span>
             </p>
           </div>
         </motion.div>

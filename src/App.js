@@ -27,7 +27,7 @@ function App() {
   }, []);
 
   return (
-    <div className="app bg-deep-blue ">
+    <div className="app bg-slate-700">
       <NavBar
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}
@@ -85,6 +85,7 @@ function App() {
         <Contact />
         </motion.div>
       </div>
+      <LineGradient />
       <Footer />
     </div>
   );

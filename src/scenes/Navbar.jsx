@@ -8,8 +8,8 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
   return (
     <AnchorLink
       className={`${
-        selectedPage === lowerCasePage ? "text-yellow" : ""
-      } hover:text-yellow transition duration-500`}
+        selectedPage === lowerCasePage ? "text-purple" : ""
+      } hover:text-purple transition duration-500`}
       href={`#${lowerCasePage}`}
       onClick={() => setSelectedPage(lowerCasePage)}
     >
@@ -25,12 +25,12 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
 
   return (
     <nav
-      className={`${navbarBackground} z-40 w-full fixed top-0 py-6 bg-violet pt-3 pb-2`}
+      className={`${navbarBackground} z-40 w-full fixed top-0 py-6 bg-black pt-3 pb-2`}
     >
       <div className="flex items-center justify-between mx-auto w-5/6">
         <AnchorLink onClick={() => setSelectedPage("home")} href="#home">
           <h4
-            className={`font-pacifico text-2xl hover:text-red text-cream font-bold`}
+            className={`font-righteous text-2xl hover:text-purple text-white font-bold`}
           >
             Chakri
           </h4>
@@ -71,7 +71,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
         )}
         {/**mobile */}
         {!isAbovesSmallScreens && isMenuToggled && (
-          <div className="fixed right-0 bottom-0 h-full bg-violet w-[300px]">
+          <div className="fixed right-0 bottom-0 h-full bg-black w-[300px]">
             {/**close button */}
             <div className="flex justify-end p-12 ">
               <button onClick={() => setIsMenuToggled(!isMenuToggled)}>

@@ -19,6 +19,11 @@ module.exports = {
         thickblue:"#0E6BA8",
         "dark-grey": "#757575",
         "opaque-black": "rgba(0,0,0,0.35)",
+        "deep-black":"#20252E",
+        navColor:"#404258",
+        purple:"#865DFF",
+        "input-color":"#1F1D36"
+    
       },
       backgroundImage: (theme) => ({
         "gradient-rainbow":

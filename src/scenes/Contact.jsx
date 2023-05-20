@@ -32,7 +32,7 @@ const Contact = () => {
         className="flex justify-end w-full"
       >
         <div>
-          <p className="font-righteous font-semibold text-4xl text-red mt-[-20%]">
+          <p className="font-righteous font-semibold text-4xl text-purple mt-[-20%]">
             <span className="text-white">CONTACT ME</span> TO GET STARTED
           </p>
         </div>
@@ -72,7 +72,7 @@ const Contact = () => {
             method="POST"
           >
             <input
-              className="w-full bg-violet font-semibold placeholder-thickblue p-3 rounded-md"
+              className="w-full bg-input-color font-semibold placeholder-white p-3 rounded-md"
               type="text"
               placeholder="NAME"
               {...register("name", {
@@ -88,7 +88,7 @@ const Contact = () => {
             )}
 
             <input
-              className="w-full bg-violet font-semibold placeholder-thickblue p-3 mt-5 rounded-md"
+              className="w-full  bg-input-color font-semibold placeholder-white p-3 mt-5 rounded-md"
               type="text"
               placeholder="EMAIL"
               {...register("email", {
@@ -104,7 +104,7 @@ const Contact = () => {
             )}
 
             <textarea
-              className="w-full bg-violet font-semibold placeholder-thickblue p-3 mt-5 rounded-md"
+              className="w-full bg- bg-input-color font-semibold placeholder-white p-3 mt-5 rounded-md"
               name="message"
               placeholder="MESSAGE"
               rows="4"
@@ -124,7 +124,7 @@ const Contact = () => {
             )}
 
             <button
-              className="p-5 bg-white rounded-md font-semibold text-deep-blue mt-2 hover:bg-red hover:text-white transition duration-500 font-righteous tracking-wide ml-1 "
+              className="p-5 bg-white rounded-md font-semibold text-deep-blue mt-2 hover:bg-white hover:text-purple transition duration-500 font-righteous tracking-wide ml-1 "
               type="submit"
             >
               SEND ME A MESSAGE
