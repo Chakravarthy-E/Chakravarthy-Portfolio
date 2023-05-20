@@ -32,9 +32,17 @@ import rockpaper from "./rockpaper.png";
 import express from "./express.svg"
 import postman from "./postman.svg"
 import figma from "./figma.svg" 
+import github from "./github.svg"
+import git from "./git.svg"
+import netlify from "./netlify.svg"
+import screen from "./screen.svg"
 
 export {
   profile,
+  github,
+  screen,
+  netlify,
+  git,
   CloseIcon,
   MenuIcon,
   menuIcon,

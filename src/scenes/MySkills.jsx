@@ -1,6 +1,6 @@
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
-import { HTML, postman,figma} from "../assets";
+import { HTML, postman,figma,github,git, netlify} from "../assets";
 import { CSS } from "../assets";
 import { JS } from "../assets";
 import { mongoDB } from "../assets";
@@ -41,15 +41,18 @@ const MySkills = () => {
             <img src={CSS} alt="css" />
             <img src={JS} alt="javaScript" />
             <img src={REACTLOGO} alt="react" />
-            <img src={mongoDB} alt="mongoDo" />
             <img src={nodejs} alt="NodeJs" />
+            <img src={mongoDB} alt="mongoDo" />
             <img src={MYSQL} alt="mySql" />
+            <img src={express} alt="express" />
             <img src={BOOTSTRAP} alt="BootStrap" />
             <img src={tailwind} alt="tailwind" />
-            <img src={express} alt="express" />
             <br />
             <img src={postman} alt="postman" />
             <img src={figma} alt="figma" />
+            <img src={github} alt="github" />
+            <img src={git} alt="git" />
+            <img src={netlify} alt='netlify' />
           </div>
         </div>
       </div>
