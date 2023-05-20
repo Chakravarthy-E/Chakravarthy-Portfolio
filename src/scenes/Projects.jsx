@@ -61,7 +61,7 @@ const Projects = () => {
           transition={{ duration: 0.5 }}
           variants={container}
         >
-        <div className="max-w-md mx-auto bg-purple rounded-xl shadow-md border border-white overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
+        <div className="max-w-md mx-auto bg-white rounded-xl shadow-md border ml-1 border-black overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
             <img
               className="w-[332px] h-[240px]"
               src={calculator}
@@ -74,16 +74,16 @@ const Projects = () => {
               <p className="text-gray-700 text-base"></p>
             </div>
             <div className="pt-1 pb-2 flex justify-center">
-              <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 mb-1  hover:bg-black hover:text-purple">
+              <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 mb-1  hover:bg-white hover:text-purple hover:border border-purple">
                 <a href="#DEMO">Demo</a>
               </span>
-              <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 ml-27 mb-1  hover:bg-black hover:text-purple">
+              <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 ml-27 mb-1  hover:bg-white hover:text-purple hover:border border-purple">
                 <a href="#github">Github</a>
               </span>
             </div>
           </div>
 
-          <div className="max-w-md mx-auto bg-purple border border-white rounded-xl shadow-md overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
+          <div className="max-w-md mx-auto bg-white border border-black rounded-xl ml-1 shadow-md overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
             <img
               className="w-[332px] h-[240px]"
               src={rockpaper}
@@ -96,16 +96,16 @@ const Projects = () => {
               <p className="text-gray-700 text-base"></p>
             </div>
             <div className="pt-1 pb-2 flex justify-center">
-              <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 mb-1 hover:bg-black hover:text-purple">
+              <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 mb-1 hover:bg-white hover:text-purple hover:border border-purple">
                 <a href="#DEMO">Demo</a>
               </span>
-              <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 ml-27 mb-1 hover:bg-black hover:text-purple">
+              <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 ml-27 mb-1 hover:bg-white hover:text-purple hover:border border-purple">
                 <a href="#github">Github</a>
               </span>
             </div>
           </div>
 
-          <div className="max-w-md mx-auto bg-purple rounded-xl border border-white shadow-md overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
+          <div className="max-w-md mx-auto bg-white rounded-xl border border-black ml-1 shadow-md overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
             <img className="w-[332px] h-[240px]" src={todolist} alt="todolist" />
             <div className="px-6 py-4">
               <div className="font-sm font-righteous text-xl text-black flex justify-center">
@@ -114,10 +114,10 @@ const Projects = () => {
               <p className="text-gray-700 text-base"></p>
             </div>
             <div className="pt-1 pb-2 flex justify-center">
-              <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 mb-1 hover:bg-black hover:text-purple">
+              <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 mb-1 hover:bg-white hover:text-purple hover:border border-purple">
                 <a href="#DEMO">Demo</a>
               </span>
-              <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 ml-27 mb-1 hover:bg-black hover:text-purple">
+              <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 ml-27 mb-1 hover:bg-white hover:text-purple hover:border border-purple">
                 <a href="#github">Github</a>
               </span>
             </div>
