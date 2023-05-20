@@ -69,7 +69,7 @@ const Landing = ({ setSelectedPage }) => {
         >
           <AnchorLink
             className="bg-white text-deep-blue rounded-md py-3 px-7 font-semibold
-           hover:bg-white hover:text-purple  transition duration-500 font-righteous "
+           hover:bg-white shadow-md hover:shadow-purple hover:text-purple  transition duration-500 font-righteous "
             onClick={() =>
               setSelectedPage("Contact")
             } /**change here contact to Conctact if error occurs */
@@ -80,7 +80,7 @@ const Landing = ({ setSelectedPage }) => {
 
           <AnchorLink
             className="bg-white text-deep-blue rounded-md py-3 px-7 font-semibold
-           hover:bg-white hover:text-purple  transition duration-500 font-righteous ml-3 hover:scale-10"
+           hover:bg-white hover:text-purple shadow-md hover:shadow-purple transition duration-500 font-righteous ml-3 hover:scale-10"
             /**change here contact to Conctact if error occurs */
             href="http://google.com/"
           >

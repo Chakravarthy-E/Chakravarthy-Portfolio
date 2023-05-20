@@ -9,11 +9,11 @@ import HTML from "./html-5-svgrepo-com.svg";
 import CSS from "./css3-svgrepo-com.svg";
 import JS from "./javascript-svgrepo-com.svg";
 import REACTLOGO from "./react-svgrepo-com.svg";
-import MONGODB from "./mongodb-svgrepo-com.svg";
+import mongoDB from "./mongoDB.svg";
 import MYSQL from "./mysql-svgrepo-com.svg";
-import NODEJS from "./nodejs-svgrepo-com.svg";
+import nodejs from "./nodejs.svg";
 import BOOTSTRAP from "./bootstrap-4-logo-svgrepo-com.svg";
-import TAILWINDCSS from "./tailwindcss-icon-svgrepo-com.svg";
+import tailwind from "./tailwind.svg";
 import project1 from "./project-1.jpeg";
 import project2 from "./project-2.jpeg";
 import project3 from "./project-3.jpeg";
@@ -29,6 +29,9 @@ import todolist from "./todolist.jpg";
 import logo from "./C-icon.png";
 import profile_pic from "./profile-pic.jpg";
 import rockpaper from "./rockpaper.png";
+import express from "./express.svg"
+import postman from "./postman.svg"
+import figma from "./figma.svg" 
 
 export {
   profile,
@@ -37,16 +40,19 @@ export {
   menuIcon,
   Linkedin,
   Instagram,
+  express,
   Github,
   HTML,
   CSS,
+  figma,
   JS,
+  postman,
   REACTLOGO,
-  MONGODB,
+  mongoDB,
   MYSQL,
-  NODEJS,
+  nodejs,
   BOOTSTRAP,
-  TAILWINDCSS,
+  tailwind,
   project1,
   project4,
   project5,

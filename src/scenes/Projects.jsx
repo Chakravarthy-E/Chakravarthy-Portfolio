@@ -35,7 +35,7 @@ const Projects = () => {
   return (
     <section id="projects" className="pt-48 pb-48">
       <motion.div
-        className="md:w-2/4 mx-auto text-center"
+        className="md:w-2/4 mx-auto text-left ml-[-1px]"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
@@ -61,7 +61,7 @@ const Projects = () => {
           transition={{ duration: 0.5 }}
           variants={container}
         >
-        <div className="max-w-md mx-auto bg-white rounded-xl shadow-md border ml-1 border-black overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
+        <div className="max-w-md mx-auto bg-white rounded-xl shadow-lg hover:shadow-purple border ml-1 border-black overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
             <img
               className="w-[332px] h-[240px]"
               src={calculator}
@@ -83,7 +83,7 @@ const Projects = () => {
             </div>
           </div>
 
-          <div className="max-w-md mx-auto bg-white border border-black rounded-xl ml-1 shadow-md overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
+          <div className="max-w-md mx-auto bg-white border shadow-lg hover:shadow-purple border-black rounded-xl ml-1 shadow-md overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
             <img
               className="w-[332px] h-[240px]"
               src={rockpaper}
@@ -105,7 +105,7 @@ const Projects = () => {
             </div>
           </div>
 
-          <div className="max-w-md mx-auto bg-white rounded-xl border border-black ml-1 shadow-md overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
+          <div className="max-w-md mx-auto bg-white shadow-lg hover:shadow-purple rounded-xl border border-black ml-1 shadow-md overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
             <img className="w-[332px] h-[240px]" src={todolist} alt="todolist" />
             <div className="px-6 py-4">
               <div className="font-sm font-righteous text-xl text-black flex justify-center">
