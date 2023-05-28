@@ -22,7 +22,7 @@ const AboutMe = () => {
               </p>
             </div>
             <div className="mt-10 text-gray-700">
-              <p className="mb-6">
+              <p className="mb-6 font-righteous">
               I'm <span className="text-purple">Chakravarthy</span>, a full-stack developer with a passion for creating innovative digital solutions. I have expertise in both front-end and back-end development, allowing me to build seamless web applications. From designing user-friendly interfaces to implementing efficient server-side logic, I bring a holistic approach to development. With experience in databases, version control, and deployment platforms, I deliver high-quality solutions. Let's collaborate to bring your ideas to life with cutting-edge technology and exceptional user experiences.
               </p>
             </div>
