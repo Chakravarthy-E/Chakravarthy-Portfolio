@@ -9,7 +9,7 @@ import Projects from "./scenes/Projects";
 import {motion} from "framer-motion"
 import Footer from "./scenes/Footer"
 import Contact from "./scenes/Contact"
-
+import AboutMe from "./scenes/Aboutme";
 
 
 function App() {
@@ -46,6 +46,23 @@ function App() {
           onViewportEnter={() => setSelectedPage("home")}
         >
           <Landing setSelectedPage={setSelectedPage} />
+        </motion.div>
+      </div>
+
+      <LineGradient />
+      <div className="w-5/6 mx-auto md:h-full">
+        {isAboveMediumScreens && (
+          <DotGroup
+            selectedPage={selectedPage}
+            setSelectedPage={setSelectedPage}
+          />
+        )}
+        <motion.div
+          margin="0 0 -200px 0"
+          amount="all"
+          onViewportEnter={() => setSelectedPage("home")}
+        >
+          <AboutMe setSelectedPage={setSelectedPage} />
         </motion.div>
       </div>
 
@@ -87,6 +104,7 @@ function App() {
       </div>
       <LineGradient />
       <Footer />
+
     </div>
   );
 }

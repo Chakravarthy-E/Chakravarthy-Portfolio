@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { menuIcon } from "../assets";
 import SocialMediaIcons from "../components/SocialMediaIcons";
-import "./landing.css"
+import "./landing.css";
 const Landing = ({ setSelectedPage }) => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 
@@ -45,14 +45,23 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
+        <p className="text-1xl mt-[-1] font-righteous tracking-wider z-10 text-center md:text-start text-white">
+        Hi, I'am
+      </p>
           <p className="text-4xl font-righteous tracking-wider z-10 text-center md:text-start text-purple  ml-[-1%] transform h-7 bg-blue-400 w-1/5 hover:bg-blue-600 transition duration-500 hover:scale-125 mb-4">
-            CHAKRAVARTHY<span className="text-lightgreen hover:text-name ml-4 text-purple">E</span>
+            CHAKRAVARTHY
+            <span className="text-lightgreen hover:text-name ml-4 text-purple">
+              E
+            </span>
           </p>
-          <p className="text-1xl font-righteous tracking-wider z-10 text-center md:text-start text-white">Full Stack Developer</p>
-          <p className="mt-10 mb-7 text-sm text-center md:text-start font-righteous tracking-wide">
-            A passionate individual who always thrives to work on end to end
-            products which develop sustainable and scalable social and technical
-            systems to create impact
+          <p className="text-1xl font-righteous tracking-wider z-10 text-center md:text-start text-white">
+            Full Stack Developer
+          </p>
+          <p className="mt-3 mb-7 text-gray-600 text-sm text-center md:text-start font-righteous tracking-wide">
+            As a full-stack developer, I am passionate about creating impactful
+            end-to-end products. I have expertise in both front-end and back-end
+            development, utilizing technologies like HTML, CSS, JavaScript,
+            React, Node.js, and databases such as MongoDB and MySQL.
           </p>
         </motion.div>
         {/**Call to Action */}
@@ -77,29 +86,19 @@ const Landing = ({ setSelectedPage }) => {
           >
             CONTACT ME
           </AnchorLink>
-
-          <AnchorLink
-            className="bg-white text-deep-blue rounded-md py-3 px-7 font-semibold
-           hover:bg-white hover:text-purple shadow-md hover:shadow-purple transition duration-500 font-righteous ml-3 hover:scale-10"
-            /**change here contact to Conctact if error occurs */
-            href="http://google.com/"
-          >
-            RESUME
-          </AnchorLink>
-     
         </motion.div>
         <motion.div
-        className="flex mt-5 justify-center md:justify-start ml-1"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ delay: 0.4, duration: 0.5 }}
-        variants={{
-          hidden: { opacity: 0, x: -50 },
-          visible: { opacity: 1, x: 0 },
-        }}
+          className="flex mt-5 justify-center md:justify-start ml-1"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 },
+          }}
         >
-        <SocialMediaIcons />
+          <SocialMediaIcons />
         </motion.div>
       </div>
     </section>

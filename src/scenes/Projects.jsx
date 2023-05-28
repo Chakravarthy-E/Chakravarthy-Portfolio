@@ -3,7 +3,7 @@ import { calculator } from "../assets";
 import { rockpaper } from "../assets";
 import { todolist } from "../assets";
 import { github } from "../assets";
-import {screen} from "../assets"
+import { screen } from "../assets";
 
 const container = {
   hidden: {},
@@ -25,9 +25,7 @@ const Project = ({ title }) => {
     <motion.div variants={projectVarient} className="relative">
       <div className={overlayStyles}>
         <p className="text-2xl font-playfair">{title}</p>
-        <p className="mt-7">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-        </p>
+        <p className="mt-7">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
       </div>
     </motion.div>
   );
@@ -63,38 +61,46 @@ const Projects = () => {
           transition={{ duration: 0.5 }}
           variants={container}
         >
-        <div className="max-w-md mx-auto w-[300px] bg-card-color rounded-xl shadow-lg hover:shadow-purple border ml-1 border-black overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
-            <img
-              className="w-[332px] h-[240px]"
-              src={calculator}
-              alt="Calculator App"
-            />
+          <div className="max-w-md mx-auto w-[300px] bg-black  rounded shadow-lg hover:shadow-purple border ml-1 border-white overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
+            <div className="image-container relative">
+              <img className="w-[332px] h-[240px]" src={calculator} alt="Calculator App" />
+              <div className="overlay absolute top-0 left-0 w-full h-full opacity-0 hover:opacity-90 transition duration-500 bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue">
+                <p className="text-2xl font-playfair">Calculator App</p>
+                <p className="mt-7">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
             <div className="px-6 py-4">
               <div className="font-sm font-righteous text-xl text-white flex justify-center">
-                Calculator App
+              Calculator App
               </div>
               <p className="text-gray-700 text-base"></p>
             </div>
             <div className="pt-1 pb-2 flex justify-center">
               <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 mb-1   hover:text-purple hover:border border-purple">
                 <a href="#DEMO">
-                <img className="w-[20px]" src={screen} alt="" />
+                  <img className="w-[20px]" src={screen} alt="" />
                 </a>
               </span>
               <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 ml-27 mb-1  hover:text-purple hover:border border-purple">
                 <a href="#github">
-                <img className="w-[20px]" src={github} alt="" />
+                  <img className="w-[20px]" src={github} alt="" />
                 </a>
               </span>
             </div>
           </div>
 
-          <div className="max-w-md mx-auto w-[300px] bg-card-color border shadow-lg hover:shadow-purple border-black rounded-xl ml-1  overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
-            <img
-              className="w-[332px] h-[240px]"
-              src={rockpaper}
-              alt="rockpaparscissors"
-            />
+          <div className="max-w-md mx-auto w-[300px] bg-black border shadow-lg hover:shadow-purple border-white rounded ml-1  overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
+            <div className="image-container relative">
+              <img
+                className="w-[332px] h-[240px]"
+                src={rockpaper}
+                alt="rockpaparscissors"
+              />
+              <div className="overlay absolute top-0 left-0 w-full h-full opacity-0 hover:opacity-90 transition duration-500 bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue">
+                <p className="text-2xl font-playfair">Rock Paper Scissors</p>
+                <p className="mt-7">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
             <div className="px-6 py-4">
               <div className="font-sm text-center font-righteous text-xl  text-white flex justify-center">
                 Rock Paper Scissors
@@ -104,44 +110,53 @@ const Projects = () => {
             <div className="pt-1 pb-2 flex justify-center">
               <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 mb-1 hover:text-purple hover:border border-purple">
                 <a href="#DEMO">
-                <img className="w-[20px]" src={screen} alt="" />
+                  <img className="w-[20px]" src={screen} alt="" />
                 </a>
               </span>
               <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 ml-27 mb-1 hover:text-purple hover:border border-purple">
                 <a href="#github">
-                <img className="w-[20px]" src={github} alt="" />
+                  <img className="w-[20px]" src={github} alt="" />
                 </a>
               </span>
             </div>
           </div>
 
-          <div className="max-w-md mx-auto w-[300px] bg-card-color shadow-lg  hover:shadow-purple rounded-xl border border-black ml-1  overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
-            <img className="w-[332px] h-[240px]" src={todolist} alt="todolist" />
-            <div className="px-6 py-4">
-              <div className="font-sm font-righteous text-xl text-white flex justify-center">
-                Todo List App
-              </div>
-              <p className="text-gray-700 text-base"></p>
-            </div>
-            <div className="pt-1 pb-2 flex justify-center">
-              <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 mb-1 hover:text-purple hover:border border-purple">
-                <a href="#DEMO">
-                <img className="w-[20px]" src={screen} alt="" />
-                </a>
-              </span>
-              <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 ml-27 mb-1 hover:text-purple hover:border border-purple">
-                <a href="#github">
-                <img className="w-[20px]" src={github} alt="" />
-                </a>
-              </span>
+          <div className="max-w-md mx-auto w-[300px] bg-black shadow-lg  hover:shadow-purple rounded border border-white ml-1  overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
+            <div className="image-container relative">
+              <img
+                className="w-[332px] h-[240px]"
+                src={todolist}
+                alt="todolist"
+              />
+              <div className="overlay absolute top-0 left-0 w-full h-full opacity-0 hover:opacity-90 transition               duration-500 bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue">
+              <p className="text-2xl font-playfair">Todo List App</p>
+              <p className="mt-7">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
             </div>
           </div>
-          {/**row 2 */}
-
-          {/**row 3 */}
-        </motion.div>
-      </div>
-    </section>
-  );
+          <div className="px-6 py-4">
+            <div className="font-sm font-righteous text-xl text-white flex justify-center">
+              Todo List App
+            </div>
+            <p className="text-gray-700 text-base"></p>
+          </div>
+          <div className="pt-1 pb-2 flex justify-center">
+            <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 mb-1 hover:text-purple hover:border border-purple">
+              <a href="#DEMO">
+                <img className="w-[20px]" src={screen} alt="" />
+              </a>
+            </span>
+            <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 ml-27 mb-1 hover:text-purple hover:border border-purple">
+              <a href="#github">
+                <img className="w-[20px]" src={github} alt="" />
+              </a>
+            </span>
+          </div>
+        </div>
+        {/**row 2 */}
+      </motion.div>
+    </div>
+  </section>
+);
 };
 export default Projects;
+
