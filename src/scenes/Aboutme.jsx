@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { chakri } from "../assets";
+import { anime } from "../assets";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 const AboutMe = () => {
   return (
@@ -17,25 +18,34 @@ const AboutMe = () => {
             }}
           >
             <div>
-              <p className="font-righteous font-semibold text-4xl mb-2 text-center">
+              <p className="font-righteous font-semibold text-4xl mb-2 text-left">
                 ABOUT <span className="text-purple">ME</span>
               </p>
             </div>
-            <div className="mt-10 text-gray-700">
-              <p className="mb-6 font-righteous">
-              I'm <span className="text-purple">Chakravarthy</span>, a full-stack developer with a passion for creating innovative digital solutions. I have expertise in both front-end and back-end development, allowing me to build seamless web applications. From designing user-friendly interfaces to implementing efficient server-side logic, I bring a holistic approach to development. With experience in databases, version control, and deployment platforms, I deliver high-quality solutions. Let's collaborate to bring your ideas to life with cutting-edge technology and exceptional user experiences.
+            <div className="mt-10 text-gray-700 text-justify">
+              <p className="mb-6 font-righteous tracking-normal">
+                I'm <span className="text-purple">Chakravarthy</span>, a
+                full-stack developer with a passion for creating innovative
+                digital solutions. I have expertise in both front-end and
+                back-end development, allowing me to build seamless web
+                applications. From designing user-friendly interfaces to
+                implementing efficient server-side logic, I bring a holistic
+                approach to development. With experience in databases, version
+                control, and deployment platforms, I deliver high-quality
+                solutions. Let's collaborate to bring your ideas to life with
+                cutting-edge technology and exceptional user experiences.
               </p>
             </div>
-            <div className="mt-10 flex justify-center">
-            <a
-            className="bg-white text-deep-blue rounded-md py-3 px-7 font-semibold
-           hover:bg-white hover:text-purple shadow-md hover:shadow-purple transition duration-500 font-righteous ml-3 hover:scale-10"
-            /**change here contact to Conctact if error occurs */
-            href="https://drive.google.com/file/d/1XKJaoKPdM39n9NQTzL4TdX2eyUVCrxbY/view?usp=sharing"
-            download
-          >
-           RESUME
-          </a>
+            <div className="mt-10 flex justify-start">
+              <a
+                className="bg-white text-deep-blue rounded-md py-3 px-7 font-semibold
+           hover:bg-white sm:justify-center hover:text-purple shadow-md hover:shadow-purple transition duration-500 font-righteous ml-3 hover:scale-10"
+                /**change here contact to Conctact if error occurs */
+                href="https://drive.google.com/file/d/1XKJaoKPdM39n9NQTzL4TdX2eyUVCrxbY/view?usp=sharing"
+                download
+              >
+                RESUME
+              </a>
             </div>
           </motion.div>
         </div>
@@ -51,7 +61,7 @@ const AboutMe = () => {
             }}
           >
             <img
-              src={chakri}
+              src={anime}
               alt="Profile"
               className="w-96 h-auto rounded-[50%] shadow-lg"
             />

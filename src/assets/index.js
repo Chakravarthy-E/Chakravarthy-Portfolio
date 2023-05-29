@@ -37,9 +37,11 @@ import git from "./git.svg"
 import netlify from "./netlify.svg"
 import screen from "./screen.svg"
 import chakri from "./chakri.jpg"
+import anime from "./anime.jpg"
 
 export {
   profile,
+  anime,
   chakri,
   github,
   screen,

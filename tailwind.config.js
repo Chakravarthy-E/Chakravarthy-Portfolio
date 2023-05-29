@@ -23,7 +23,7 @@ module.exports = {
         navColor:"#404258",
         purple:"#865DFF",
         "input-color":"#1F1D36",
-        "card-color":"#282A3A"
+        "card-color":"#18122B"
     
       },
       backgroundImage: (theme) => ({

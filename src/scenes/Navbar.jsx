@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMeidaQuery from "../hooks/useMediaQuery";
 import { MenuIcon, CloseIcon } from "../assets";
@@ -18,14 +18,32 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
   );
 };
 
-const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
+const Navbar = ({ selectedPage, setSelectedPage }) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const isAbovesSmallScreens = useMeidaQuery("(min-width:768px)");
-  const navbarBackground = isTopOfPage ? "" : "bg-red";
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset;
+      if (scrollTop > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const navbarBackground = isScrolled ? "bg-black" : "";
 
   return (
     <nav
-      className={`${navbarBackground} z-40 w-full fixed top-0 py-6 bg-black pt-3 pb-2`}
+      className={`z-40 w-full fixed top-0 py-6 pt-3 pb-2 ${navbarBackground}`}
     >
       <div className="flex items-center justify-between mx-auto w-5/6">
         <AnchorLink onClick={() => setSelectedPage("home")} href="#home">
@@ -36,7 +54,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
           </h4>
         </AnchorLink>
 
-        {/**Desktop nav */}
+        {/* Desktop nav */}
         {isAbovesSmallScreens ? (
           <div className="flex justify-between gap-16 font-opansans text-sm font-semibold ">
             <Link
@@ -74,16 +92,18 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
             <img alt="menu-icon" src={MenuIcon} />
           </button>
         )}
-        {/**mobile */}
+
+        {/* Mobile */}
         {!isAbovesSmallScreens && isMenuToggled && (
           <div className="fixed right-0 bottom-0 h-full bg-black w-[300px]">
-            {/**close button */}
+            {/* Close button */}
             <div className="flex justify-end p-12 ">
               <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-                <img src={CloseIcon} alt="close icon" className="rounded-sm" />
+               
+              <img src={CloseIcon} alt="close icon" className="rounded-sm" />
               </button>
             </div>
-            {/**Menu items */}
+            {/* Menu items */}
             <div className="flex flex-col gap-10 ml-[33%] text-1xl text-white">
               <Link
                 page="Home"

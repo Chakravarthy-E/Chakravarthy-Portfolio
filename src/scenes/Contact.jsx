@@ -29,10 +29,10 @@ const Contact = () => {
           hidden: { opacity: 0, x: 50 },
           visible: { opacity: 1, x: 0 },
         }}
-        className="flex justify-end w-full"
+        className="flex justify-start w-full"
       >
         <div>
-          <p className="font-righteous font-semibold text-4xl text-purple mt-[-20%]">
+          <p className="font-righteous  font-semibold text-4xl text-purple mt-[-20%]">
             <span className="text-white">CONTACT ME</span> TO GET STARTED
           </p>
         </div>
@@ -40,19 +40,7 @@ const Contact = () => {
 
       {/* FORM & IMAGE */}
       <div className="md:flex md:justify-between gap-16 mt-4">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.5 }}
-          variants={{
-            hidden: { opacity: 0, y: 50 },
-            visible: { opacity: 1, y: 0 },
-          }}
-          className="basis-1/2 flex justify-center"
-        >
-          <img src={contact} alt="contact" />
-        </motion.div>
+      
 
         <motion.div
           initial="hidden"
@@ -72,7 +60,7 @@ const Contact = () => {
             method="POST"
           >
             <input
-              className="w-full bg-input-color font-semibold placeholder-white p-3 rounded-md"
+              className="w-full bg-card-color font-semibold placeholder-white p-3 rounded-md"
               type="text"
               placeholder="NAME"
               {...register("name", {
@@ -88,7 +76,7 @@ const Contact = () => {
             )}
 
             <input
-              className="w-full  bg-input-color font-semibold placeholder-white p-3 mt-5 rounded-md"
+              className="w-full  bg-card-color font-semibold placeholder-white p-3 mt-5 rounded-md"
               type="text"
               placeholder="EMAIL"
               {...register("email", {
@@ -104,7 +92,7 @@ const Contact = () => {
             )}
 
             <textarea
-              className="w-full bg- bg-input-color font-semibold placeholder-white p-3 mt-5 rounded-md"
+              className="w-full bg- bg-card-color font-semibold placeholder-white p-3 mt-5 rounded-md"
               name="message"
               placeholder="MESSAGE"
               rows="4"
@@ -131,6 +119,19 @@ const Contact = () => {
             </button>
           </form>
         </motion.div>
+
+        <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, y: 50 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        className="basis-1/2 flex justify-center">
+        <img src={contact} alt="contact" className="mt-[-40px]" />
+      </motion.div>
       </div>
     </section>
   );
