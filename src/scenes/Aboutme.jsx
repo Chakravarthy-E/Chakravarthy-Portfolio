@@ -18,7 +18,7 @@ const AboutMe = () => {
             }}
           >
             <div>
-              <p className="font-righteous font-semibold text-4xl mb-2 text-left">
+              <p className="font-righteous font-semibold text-4xl mb-2">
                 ABOUT <span className="text-purple">ME</span>
               </p>
             </div>

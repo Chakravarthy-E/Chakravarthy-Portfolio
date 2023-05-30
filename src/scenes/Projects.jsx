@@ -11,7 +11,7 @@ const container = {
     transition: { staggerChildren: 0.2 },
   },
 };
-const projectVarient = {
+const projectVariant = {
   hidden: { opacity: 0, scale: 0.8 },
   visible: { opacity: 1, scale: 1 },
 };
@@ -22,7 +22,7 @@ const Project = ({ title }) => {
   const projectTitle = title.split(" ").join("-").toLowerCase();
 
   return (
-    <motion.div variants={projectVarient} className="relative">
+    <motion.div variants={projectVariant} className="relative">
       <div className={overlayStyles}>
         <p className="text-2xl font-playfair">{title}</p>
         <p className="mt-7">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
@@ -35,7 +35,7 @@ const Projects = () => {
   return (
     <section id="projects" className="pt-48 pb-48">
       <motion.div
-        className="md:w-2/4 mx-auto text-left ml-[-1px]"
+        className="text-center"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
@@ -46,7 +46,7 @@ const Projects = () => {
         }}
       >
         <div>
-          <p className="font-righteous font-semibold text-4xl mb-10 mt-[-20%]">
+          <p className="font-righteous font-semibold text-4xl mb-10 mt-[-10%]">
             MY <span className="text-purple">PROJECTS</span>
           </p>
         </div>
@@ -54,14 +54,14 @@ const Projects = () => {
       {/***Projects */}
       <div className="flex justify-center m-2">
         <motion.div
-          className="sm:grid sm:grid-cols-3"
+          className="sm:grid sm:grid-cols-3 gap-4"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.5 }}
           variants={container}
         >
-          <div className="max-w-md mx-auto w-[300px] bg-black  rounded shadow-lg hover:shadow-purple border ml-1 border-white overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
+          <div className="max-w-md mx-auto w-[300px] bg-black rounded shadow-lg hover:shadow-purple border ml-1 border-white overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
             <div className="image-container relative">
               <img className="w-[332px] h-[240px]" src={calculator} alt="Calculator App" />
               <div className="overlay absolute top-0 left-0 w-full h-full opacity-0 hover:opacity-90 transition duration-500 bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue">
@@ -71,7 +71,7 @@ const Projects = () => {
             </div>
             <div className="px-6 py-4">
               <div className="font-sm font-righteous text-xl text-white flex justify-center">
-              Calculator App
+                Calculator App
               </div>
               <p className="text-gray-700 text-base"></p>
             </div>
@@ -129,34 +129,33 @@ const Projects = () => {
                 alt="todolist"
               />
               <div className="overlay absolute top-0 left-0 w-full h-full opacity-0 hover:opacity-90 transition               duration-500 bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue">
-              <p className="text-2xl font-playfair">Todo List App</p>
-              <p className="mt-7">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <p className="text-2xl font-playfair">Todo List App</p>
+                <p className="mt-7">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <div className="px-6 py-4">
+              <div className="font-sm text-center font-righteous text-xl text-white flex justify-center">
+                Todo List App
+              </div>
+              <p className="text-gray-700 text-base"></p>
+            </div>
+            <div className="pt-1 pb-2 flex justify-center">
+              <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 mb-1 hover:text-purple hover:border border-purple">
+                <a href="#DEMO">
+                  <img className="w-[20px]" src={screen} alt="" />
+                </a>
+              </span>
+              <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 ml-27 mb-1 hover:text-purple hover:border border-purple">
+                <a href="#github">
+                  <img className="w-[20px]" src={github} alt="" />
+                </a>
+              </span>
             </div>
           </div>
-          <div className="px-6 py-4">
-            <div className="font-sm font-righteous text-xl text-white flex justify-center">
-              Todo List App
-            </div>
-            <p className="text-gray-700 text-base"></p>
-          </div>
-          <div className="pt-1 pb-2 flex justify-center">
-            <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 mb-1 hover:text-purple hover:border border-purple">
-              <a href="#DEMO">
-                <img className="w-[20px]" src={screen} alt="" />
-              </a>
-            </span>
-            <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 ml-27 mb-1 hover:text-purple hover:border border-purple">
-              <a href="#github">
-                <img className="w-[20px]" src={github} alt="" />
-              </a>
-            </span>
-          </div>
-        </div>
-        {/**row 2 */}
-      </motion.div>
-    </div>
-  </section>
-);
+        </motion.div>
+      </div>
+    </section>
+  );
 };
-export default Projects;
 
+export default Projects;

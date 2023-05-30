@@ -29,10 +29,10 @@ const Contact = () => {
           hidden: { opacity: 0, x: 50 },
           visible: { opacity: 1, x: 0 },
         }}
-        className="flex justify-start w-full"
+        className="flex justify-center w-full"
       >
         <div>
-          <p className="font-righteous  font-semibold text-4xl text-purple mt-[-20%]">
+          <p className="font-righteous font-semibold text-4xl text-purple mt-[-20%]">
             <span className="text-white">CONTACT ME</span> TO GET STARTED
           </p>
         </div>

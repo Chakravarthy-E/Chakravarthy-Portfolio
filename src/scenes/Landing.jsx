@@ -17,7 +17,7 @@ const Landing = ({ setSelectedPage }) => {
       setCurrentWordIndex((prevIndex) =>
         prevIndex === words.length - 1 ? 0 : prevIndex + 1
       );
-    }, 2000);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, [words.length]);
@@ -77,7 +77,7 @@ const Landing = ({ setSelectedPage }) => {
             className="text-sm font-righteous tracking-wider z-10 text-center md:text-start text-white"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
           >
             {currentWord}
           </motion.p>

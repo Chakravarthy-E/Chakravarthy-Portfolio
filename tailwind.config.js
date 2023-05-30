@@ -5,6 +5,7 @@ module.exports = {
   theme: {
     extend: {
       colors:{
+        "input-color":"#1F1D36",
         "deep-blue": "#010026",
         blue: "#2CBCE9",
         red: "#DC4492",
@@ -22,7 +23,6 @@ module.exports = {
         "deep-black":"#20252E",
         navColor:"#404258",
         purple:"#865DFF",
-        "input-color":"#1F1D36",
         "card-color":"#18122B"
     
       },
