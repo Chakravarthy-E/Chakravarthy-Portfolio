@@ -10,13 +10,14 @@ import {motion} from "framer-motion"
 import Footer from "./scenes/Footer"
 import Contact from "./scenes/Contact"
 import AboutMe from "./scenes/Aboutme";
+import Loading from "./scenes/Loading";
 
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
   const [isTopOfPage, setIsTopOfPage] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
-
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY === 0) setIsTopOfPage(true);
@@ -26,6 +27,14 @@ function App() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(()=>{
+    setTimeout(()=>{
+      setIsLoading(false)
+    },2000)
+  },[])
+  if(isLoading){
+    return <Loading />
+  }
   return (
     <div className="app">
       <NavBar
