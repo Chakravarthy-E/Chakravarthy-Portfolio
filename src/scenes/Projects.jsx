@@ -61,7 +61,7 @@ const Projects = () => {
           transition={{ duration: 0.5 }}
           variants={container}
         >
-          <div className="max-w-md mx-auto w-[300px] bg-black rounded shadow-lg hover:shadow-purple border ml-1 border-white overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
+          <div className="max-w-md mx-auto w-[300px] bg-black rounded shadow-lg hover:shadow-purple border ml-1 border-gray-800 overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
             <div className="image-container relative">
               <img className="w-[332px] h-[240px]" src={calculator} alt="Calculator App" />
               <div className="overlay absolute top-0 left-0 w-full h-full opacity-0 hover:opacity-90 transition duration-500 bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue">
@@ -89,7 +89,7 @@ const Projects = () => {
             </div>
           </div>
 
-          <div className="max-w-md mx-auto w-[300px] bg-black border shadow-lg hover:shadow-purple border-white rounded ml-1  overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
+          <div className="max-w-md mx-auto w-[300px] bg-black border shadow-lg hover:shadow-purple border-gray-800 rounded ml-1  overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
             <div className="image-container relative">
               <img
                 className="w-[332px] h-[240px]"
@@ -121,7 +121,7 @@ const Projects = () => {
             </div>
           </div>
 
-          <div className="max-w-md mx-auto w-[300px] bg-black shadow-lg  hover:shadow-purple rounded border border-white ml-1  overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
+          <div className="max-w-md mx-auto w-[300px] bg-black shadow-lg  hover:shadow-purple rounded border border-gray-800 ml-1  overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
             <div className="image-container relative">
               <img
                 className="w-[332px] h-[240px]"

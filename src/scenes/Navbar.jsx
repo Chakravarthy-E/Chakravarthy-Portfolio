@@ -56,7 +56,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
 
         {/* Desktop nav */}
         {isAbovesSmallScreens ? (
-          <div className="flex justify-between gap-16 font-opansans text-sm font-semibold ">
+          <div className="flex justify-between gap-12 font-opansans text-sm font-semibold ">
             <Link
               page="Home"
               selectedPage={selectedPage}

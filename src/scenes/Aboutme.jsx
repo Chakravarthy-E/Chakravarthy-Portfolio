@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
-import { chakri } from "../assets";
 import { anime } from "../assets";
-import AnchorLink from "react-anchor-link-smooth-scroll";
 const AboutMe = () => {
   return (
     <section id="about" className="pt-20 pb-24 mt-5 ml flex justify-center">

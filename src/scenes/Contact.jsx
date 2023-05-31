@@ -60,7 +60,7 @@ const Contact = () => {
             method="POST"
           >
             <input
-              className="w-full bg-card-color font-semibold placeholder-white p-3 rounded-md"
+              className="w-full bg-gray-800 font-semibold placeholder-white p-3 rounded-md"
               type="text"
               placeholder="NAME"
               {...register("name", {
@@ -76,7 +76,7 @@ const Contact = () => {
             )}
 
             <input
-              className="w-full  bg-card-color font-semibold placeholder-white p-3 mt-5 rounded-md"
+              className="w-full  bg-gray-800 font-semibold placeholder-white p-3 mt-5 rounded-md"
               type="text"
               placeholder="EMAIL"
               {...register("email", {
@@ -92,7 +92,7 @@ const Contact = () => {
             )}
 
             <textarea
-              className="w-full bg- bg-card-color font-semibold placeholder-white p-3 mt-5 rounded-md"
+              className="w-full bg- bg-gray-800 font-semibold placeholder-white p-3 mt-5 rounded-md"
               name="message"
               placeholder="MESSAGE"
               rows="4"
