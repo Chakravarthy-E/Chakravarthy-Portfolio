@@ -38,9 +38,17 @@ import netlify from "./netlify.svg"
 import screen from "./screen.svg"
 import chakri from "./chakri.jpg"
 import anime from "./anime.jpg"
+import desktop from "./desktop.svg"
+import coding from "./coding.svg"
+import about from "./about.svg"
+import contact3 from "./contact3.svg"
 
 export {
   profile,
+  contact3,
+  about,
+  coding,
+  desktop,
   anime,
   chakri,
   github,

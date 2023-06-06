@@ -109,12 +109,12 @@ const Projects = () => {
             </div>
             <div className="pt-1 pb-2 flex justify-center">
               <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 mb-1 hover:text-purple hover:border border-purple">
-                <a href="#DEMO">
+                <a href="https://rockpaperscissorsusinghtmlcssjs.netlify.app/">
                   <img className="w-[20px]" src={screen} alt="" />
                 </a>
               </span>
               <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 ml-27 mb-1 hover:text-purple hover:border border-purple">
-                <a href="#github">
+                <a href="https://github.com/Chakravarthy-E/Rock_Paper_Scissors_JS">
                   <img className="w-[20px]" src={github} alt="" />
                 </a>
               </span>

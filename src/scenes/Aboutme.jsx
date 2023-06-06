@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
 import { anime } from "../assets";
+import {about} from "../assets"
 const AboutMe = () => {
   return (
-    <section id="about" className="pt-20 pb-24 mt-5 ml flex justify-center">
+    <section id="about" className="pt-20 pb-24 mt-5 ml mb-[-20%] flex justify-center">
       <div className="md:flex md:justify-center md:items-center md:gap-16 px-10 md:px-0">
         <div className="md:w-1/2">
           <motion.div
@@ -59,9 +60,9 @@ const AboutMe = () => {
             }}
           >
             <img
-              src={anime}
+              src={about}
               alt="Profile"
-              className="w-96 h-auto rounded-[50%] shadow-lg"
+              className="w-96 h-auto shadow-lg"
             />
           </motion.div>
         </div>

@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
 import { contact } from "../assets";
+import {contact3} from "../assets"
 
 const Contact = () => {
   const {
@@ -130,7 +131,7 @@ const Contact = () => {
           visible: { opacity: 1, y: 0 },
         }}
         className="basis-1/2 flex justify-center">
-        <img src={contact} alt="contact" className="mt-[-40px]" />
+        <img src={contact3} alt="contact" className="mt-[-40px]" />
       </motion.div>
       </div>
     </section>

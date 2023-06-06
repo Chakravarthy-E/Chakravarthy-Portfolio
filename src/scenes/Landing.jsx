@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import { menuIcon } from "../assets";
+import { coding } from "../assets";
+import {desktop} from "../assets"
 import SocialMediaIcons from "../components/SocialMediaIcons";
 import "./landing.css";
 
@@ -32,7 +33,7 @@ const Landing = ({ setSelectedPage }) => {
         {isAboveMediumScreens ? (
           <div>
             <img
-              src={menuIcon}
+              src={coding}
               alt="profile"
               className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full 
                 max-w-[400px] md:max-w-[600px] "
@@ -40,7 +41,7 @@ const Landing = ({ setSelectedPage }) => {
           </div>
         ) : (
           <img
-            src={menuIcon}
+            src={coding}
             alt="profile"
             className=" hover:filter hover:saturate-200 transition duration-500 z-10 w-full 
               max-w-[400px] md:max-w-[600px] "
