@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import { anime } from "../assets";
-import {about} from "../assets"
+import { coding } from "../assets";
 const AboutMe = () => {
   return (
     <section id="about" className="pt-20 pb-24 mt-5 ml mb-[-20%] flex justify-center">
@@ -59,8 +58,10 @@ const AboutMe = () => {
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <img
-              src={about}
+           
+          {/**
+         */}<img
+              src={coding}
               alt="Profile"
               className="w-96 h-auto shadow-lg"
             />
