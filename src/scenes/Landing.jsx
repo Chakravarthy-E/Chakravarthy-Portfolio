@@ -7,7 +7,7 @@ import "./landing.css";
 
 const Landing = ({ setSelectedPage }) => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
-  const words = ["FULL STACK DEVELOPER", "WEB DEVELOPER"];
+  const words = ["FULL STACK DEVELOPER","WEB DEVELOPER", "REACTJS DEVELOPER"];
   const currentWord = words[currentWordIndex];
 
   useEffect(() => {
@@ -51,7 +51,7 @@ const Landing = ({ setSelectedPage }) => {
             </span>
           </motion.p>
           <motion.p
-            className="text-sm font-righteous tracking-wider z-10 text-center md:text-start text-purple"
+            className="text-sm font-righteous tracking-wider z-10 text-center md:text-start text-white"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.5 }}
@@ -60,7 +60,7 @@ const Landing = ({ setSelectedPage }) => {
             {currentWord}
           </motion.p>
           <motion.p
-            className="mt-3 mb-7 text-white text-sm text-center md:text-justify font-righteous tracking-normal"
+            className="mt-3 mb-7 text-gray-500 text-sm text-center md:text-justify font-righteous tracking-normal"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}

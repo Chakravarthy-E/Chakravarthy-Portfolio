@@ -19,7 +19,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="contact py-40">
+    <section id="contact" className="contact py-20">
       {/* HEADINGS */}
       <motion.div
         initial="hidden"
@@ -30,10 +30,10 @@ const Contact = () => {
           hidden: { opacity: 0, x: 50 },
           visible: { opacity: 1, x: 0 },
         }}
-        className="flex justify-center w-full"
+        className="flex justify-start w-full"
       >
         <div>
-          <p className="font-righteous font-semibold text-4xl text-purple mt-[-20%]">
+          <p className="font-righteous font-semibold text-4xl text-purple mb-2">
             <span className="text-white">CONTACT ME</span> TO GET STARTED
           </p>
         </div>
@@ -41,7 +41,6 @@ const Contact = () => {
 
       {/* FORM & IMAGE */}
       <div className="md:flex md:justify-between gap-16 mt-4">
-      
 
         <motion.div
           initial="hidden"
@@ -121,7 +120,7 @@ const Contact = () => {
           </form>
         </motion.div>
 
-        <motion.div
+       {/* <motion.div
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.5 }}
@@ -132,7 +131,7 @@ const Contact = () => {
         }}
         className="basis-1/2 flex justify-center">
         <img src={contact3} alt="contact" className="mt-[-40px]" />
-      </motion.div>
+      </motion.div> */}
       </div>
     </section>
   );

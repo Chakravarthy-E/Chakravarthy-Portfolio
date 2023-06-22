@@ -42,9 +42,15 @@ import desktop from "./desktop.svg"
 import coding from "./coding.svg"
 import about from "./about.svg"
 import contact3 from "./contact3.svg"
+import car_rental from "./car-rental.png"
+import shopping_cart from "./shopping_cart.png"
+import calender from "./calender.png"
 
 export {
   profile,
+  calender,
+  shopping_cart,
+  car_rental,
   contact3,
   about,
   coding,

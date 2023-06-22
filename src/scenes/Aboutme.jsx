@@ -2,7 +2,10 @@ import { motion } from "framer-motion";
 import { coding } from "../assets";
 const AboutMe = () => {
   return (
-    <section id="about" className="pt-20 pb-24 mt-5 ml mb-[-20%] flex justify-center">
+    <section
+      id="about"
+      className="pt-20 pb-24 mt-5 ml mb-[-20%] flex justify-center"
+    >
       <div className="md:flex md:justify-center md:items-center md:gap-16 px-10 md:px-0">
         <div className="md:w-1/2">
           <motion.div
@@ -20,18 +23,24 @@ const AboutMe = () => {
                 ABOUT <span className="text-purple">ME</span>
               </p>
             </div>
-            <div className="mt-10 text-gray-700 text-justify">
+            <div className="mt-10 text-gray-500 text-justify">
               <p className="mb-6 font-righteous tracking-normal">
-                I'm <span className="text-purple">Chakravarthy</span>, a
-                full-stack developer with a passion for creating innovative
-                digital solutions. I have expertise in both front-end and
-                back-end development, allowing me to build seamless web
-                applications. From designing user-friendly interfaces to
-                implementing efficient server-side logic, I bring a holistic
-                approach to development. With experience in databases, version
-                control, and deployment platforms, I deliver high-quality
-                solutions. Let's collaborate to bring your ideas to life with
-                cutting-edge technology and exceptional user experiences.
+               Hello, I'm <span className="text-purple">Chakravarthy</span>,
+                A Full Stack Developer with a passion for
+                building innovative web applications. I completed a
+                comprehensive Full Stack Development course that equipped me
+                with the skills and knowledge to create dynamic and
+                user-friendly websites. In addition to my technical expertise, I
+                also hold an MBA degree, which provides me with a unique blend
+                of business acumen and technical proficiency. This combination
+                allows me to approach projects with a strategic mindset and
+                deliver solutions that align with both user needs and business
+                objectives. With a strong foundation in HTML, CSS, JavaScript,
+                and various frameworks like React and Node.js, I am proficient
+                in creating responsive and scalable web applications. My
+                experience includes working with databases like MongoDB and
+                MySQL, as well as utilizing modern development tools and
+                libraries.
               </p>
             </div>
             <div className="mt-10 flex justify-start">
@@ -58,13 +67,9 @@ const AboutMe = () => {
               visible: { opacity: 1, x: 0 },
             }}
           >
-           
-          {/**
-         */}<img
-              src={coding}
-              alt="Profile"
-              className="w-96 h-auto shadow-lg"
-            />
+            {/**
+             */}
+            <img src={coding} alt="Profile" className="w-96 h-auto shadow-lg" />
           </motion.div>
         </div>
       </div>

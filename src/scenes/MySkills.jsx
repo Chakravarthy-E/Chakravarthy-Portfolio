@@ -66,7 +66,7 @@ const MySkills = () => {
             >
               <img src={skill.image} alt={skill.name} />
               {hoveredSkill === skill.name && (
-                <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 bg-black text-white px-2 py-1 text-sm rounded-md">
+                <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 bg-purple text-white px-2 py-1 text-sm rounded-md">
                   {skill.name}
                 </span>
               )}
