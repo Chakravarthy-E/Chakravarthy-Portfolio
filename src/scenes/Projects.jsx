@@ -5,6 +5,7 @@ import { screen } from "../assets";
 import { car_rental } from "../assets";
 import { shopping_cart } from "../assets";
 import { calender } from "../assets";
+import { crm } from "../assets";
 
 const container = {
   hidden: {},
@@ -72,22 +73,7 @@ const Projects = () => {
                 src={car_rental}
                 alt="Calculator App"
               />
-              <div className="overlay absolute top-0 left-0 w-full h-full opacity-0 hover:opacity-90 transition duration-500 bg-black z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue">
-                <p className="text-2xl font-playfair text-white">
-                  Car Rental App
-                </p>
-                <p className="mt-2">
-                  <p className="text-white">Tech Stack</p>
-                  <ul className="text-purple text-start">
-                    <li>React JS</li>
-                    <li>Node JS</li>
-                    <li>MongoDB</li>
-                    <li>Express JS</li>
-                    <li>Cloudinary</li>
-                    <li>BootStrap</li>
-                  </ul>
-                </p>
-              </div>
+
             </div>
             <div className="px-6 py-4">
               <div className="font-sm font-righteous text-xl text-white flex justify-center">
@@ -108,6 +94,34 @@ const Projects = () => {
               </span>
             </div>
           </div>
+          {/**CRM APP */}
+          <div className="max-w-md mx-auto w-[300px] bg-black rounded shadow-lg hover:shadow-purple border ml-1 border-gray-800 overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
+            <div className="image-container relative">
+              <img
+                className="w-[332px] h-[240px] object-cover"
+                src={crm}
+                alt="Calculator App"
+              />
+            </div>
+            <div className="px-6 py-4">
+              <div className="font-sm font-righteous text-xl text-white flex justify-center">
+                CRM App
+              </div>
+              <p className="text-gray-700 text-base"></p>
+            </div>
+            <div className="pt-1 pb-2 flex justify-center">
+              <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 mb-1   hover:text-purple hover:border border-purple">
+                <a href="https://crm-plus.netlify.app/">
+                  <img className="w-[20px]" src={screen} alt="" />
+                </a>
+              </span>
+              <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 ml-27 mb-1  hover:text-purple hover:border border-purple">
+                <a href="https://github.com/Chakravarthy-E/customer_relationship_management_app">
+                  <img className="w-[20px]" src={github} alt="" />
+                </a>
+              </span>
+            </div>
+          </div>
           {/**Rock paper scissors */}
           <div className="max-w-md mx-auto w-[300px] bg-black border shadow-lg hover:shadow-purple border-gray-800 rounded ml-1  overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
             <div className="image-container relative">
@@ -116,15 +130,7 @@ const Projects = () => {
                 src={rockpaper}
                 alt="rockpaparscissors"
               />
-              <div className="overlay absolute top-0 left-0 w-full h-full opacity-0 hover:opacity-90 transition duration-500 bg-black z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue">
-                <p className="text-2xl font-playfair text-white">RPS App</p>
-                <p className="mt-2 text-white">Tech Stack</p>
-                <ul className="text-purple text-start">
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>JavaScript</li>
-                </ul>
-              </div>
+              
             </div>
             <div className="px-6 py-4">
               <div className="font-sm text-center font-righteous text-xl  text-white flex justify-center">
@@ -154,17 +160,7 @@ const Projects = () => {
                 src={shopping_cart}
                 alt="todolist"
               />
-              <div className="overlay absolute top-0 left-0 w-full h-full opacity-0 hover:opacity-90 transition  duration-500 bg-black z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue">
-                <p className="text-2xl font-playfair text-white">
-                  Shopping Cart
-                </p>
-                <p className="mt-2 text-white">Tech Stack</p>
-                <ul className="text-purple text-start">
-                  <li>React JS</li>
-                  <li>Context API</li>
-                  <li>Tailwind CSS</li>
-                </ul>
-              </div>
+           
             </div>
             <div className="px-6 py-4">
               <div className="font-sm text-center font-righteous text-xl text-white flex justify-center">
@@ -193,15 +189,7 @@ const Projects = () => {
                 src={calender}
                 alt="todolist"
               />
-              <div className="overlay absolute top-0 left-0 w-full h-full opacity-0 hover:opacity-90 transition  duration-500 bg-black z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue">
-                <p className="text-2xl font-playfair text-white">Calender</p>
-                <p className="mt-2 text-white">Tech Stack</p>
-                <ul className="text-purple text-start">
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>JavaScript</li>
-                </ul>
-              </div>
+              
             </div>
             <div className="px-6 py-4">
               <div className="font-sm text-center font-righteous text-xl text-white flex justify-center">

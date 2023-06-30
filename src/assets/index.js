@@ -45,9 +45,11 @@ import contact3 from "./contact3.svg"
 import car_rental from "./car-rental.png"
 import shopping_cart from "./shopping_cart.png"
 import calender from "./calender.png"
+import crm from "./crm.png"
 
 export {
   profile,
+  crm,
   calender,
   shopping_cart,
   car_rental,
