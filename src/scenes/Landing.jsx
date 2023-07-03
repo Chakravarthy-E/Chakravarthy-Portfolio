@@ -7,7 +7,7 @@ import "./landing.css";
 
 const Landing = ({ setSelectedPage }) => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
-  const words = ["FULL STACK DEVELOPER","WEB DEVELOPER", "REACTJS DEVELOPER"];
+  const words = ["MERN STACK DEVELOPER","FRONTEND DEVELOPER", "BACKEND DEVELOPER"];
   const currentWord = words[currentWordIndex];
 
   useEffect(() => {

@@ -66,7 +66,7 @@ const Projects = () => {
           variants={container}
         >
           {/**Car Rental App */}
-          <div className="max-w-md mx-auto w-[300px] bg-black rounded shadow-lg hover:shadow-purple border ml-1 border-gray-800 overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
+          <div className="max-w-md mx-auto w-[300px] bg-black rounded shadow-md shadow-purple border ml-1 border-gray-800 overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
             <div className="image-container relative">
               <img
                 className="w-[332px] h-[240px] object-cover"
@@ -95,7 +95,7 @@ const Projects = () => {
             </div>
           </div>
           {/**CRM APP */}
-          <div className="max-w-md mx-auto w-[300px] bg-black rounded shadow-lg hover:shadow-purple border ml-1 border-gray-800 overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
+          <div className="max-w-md mx-auto w-[300px] bg-black rounded shadow-md shadow-purple border ml-1 border-gray-800 overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
             <div className="image-container relative">
               <img
                 className="w-[332px] h-[240px] object-cover"
@@ -123,7 +123,7 @@ const Projects = () => {
             </div>
           </div>
           {/**Rock paper scissors */}
-          <div className="max-w-md mx-auto w-[300px] bg-black border shadow-lg hover:shadow-purple border-gray-800 rounded ml-1  overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
+          <div className="max-w-md mx-auto w-[300px] bg-black border shadow-md shadow-purple border-gray-800 rounded ml-1  overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
             <div className="image-container relative">
               <img
                 className="w-[332px] h-[240px] object-cover"
@@ -139,7 +139,7 @@ const Projects = () => {
               <p className="text-gray-700 text-base"></p>
             </div>
             <div className="pt-1 pb-2 flex justify-center">
-              <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 mb-1 hover:text-purple hover:border border-purple">
+              <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 mb-1 :text-purple hover:border border-purple">
                 <a href="https://rockpaperscissorsusinghtmlcssjs.netlify.app/">
                   <img className="w-[20px]" src={screen} alt="" />
                 </a>
@@ -153,7 +153,7 @@ const Projects = () => {
           </div>
 
           {/**shopping cart */}
-          <div className="max-w-md mx-auto w-[300px] bg-black shadow-lg  hover:shadow-purple rounded border border-gray-800 ml-1  overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
+          <div className="max-w-md mx-auto w-[300px] bg-black shadow-md  shadow-purple rounded border border-gray-800 ml-1  overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
             <div className="image-container relative">
               <img
                 className="w-[332px] h-[240px] object-cover"
@@ -182,7 +182,7 @@ const Projects = () => {
             </div>
           </div>
           {/**calender */}
-          <div className="max-w-md mx-auto w-[300px] bg-black shadow-lg  hover:shadow-purple rounded border border-gray-800 ml-1  overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
+          <div className="max-w-md mx-auto w-[300px] bg-black shadow-md  shadow-purple rounded border border-gray-800 ml-1  overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
             <div className="image-container relative">
               <img
                 className="w-[332px] h-[240px] object-cover"
