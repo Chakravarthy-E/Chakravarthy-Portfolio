@@ -83,13 +83,13 @@ const Projects = () => {
             </div>
             <div className="pt-1 pb-2 flex justify-center">
               <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 mb-1   hover:text-purple hover:border border-purple">
-                <a href="#DEMO">
-                  <img className="w-[20px]" src={screen} alt="" />
+                <a href="https://speedy-cars.netlify.app/">
+                  <span>Demo</span>
                 </a>
               </span>
               <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 ml-27 mb-1  hover:text-purple hover:border border-purple">
                 <a href="https://github.com/Chakravarthy-E/car_rental_app">
-                  <img className="w-[20px]" src={github} alt="" />
+                <span>Github</span>
                 </a>
               </span>
             </div>
@@ -112,12 +112,12 @@ const Projects = () => {
             <div className="pt-1 pb-2 flex justify-center">
               <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 mb-1   hover:text-purple hover:border border-purple">
                 <a href="https://crm-plus.netlify.app/">
-                  <img className="w-[20px]" src={screen} alt="" />
+                <span>Demo</span>
                 </a>
               </span>
               <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 ml-27 mb-1  hover:text-purple hover:border border-purple">
                 <a href="https://github.com/Chakravarthy-E/customer_relationship_management_app">
-                  <img className="w-[20px]" src={github} alt="" />
+                <span>Github</span>
                 </a>
               </span>
             </div>
@@ -139,14 +139,14 @@ const Projects = () => {
               <p className="text-gray-700 text-base"></p>
             </div>
             <div className="pt-1 pb-2 flex justify-center">
-              <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 mb-1 :text-purple hover:border border-purple">
+              <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 mb-1  hover:text-purple hover:border border-purple">
                 <a href="https://rockpaperscissorsusinghtmlcssjs.netlify.app/">
-                  <img className="w-[20px]" src={screen} alt="" />
+                <span>Demo</span>
                 </a>
               </span>
               <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 ml-27 mb-1 hover:text-purple hover:border border-purple">
                 <a href="https://github.com/Chakravarthy-E/Rock_Paper_Scissors_JS">
-                  <img className="w-[20px]" src={github} alt="" />
+                <span>Github</span>
                 </a>
               </span>
             </div>
@@ -171,12 +171,12 @@ const Projects = () => {
             <div className="pt-1 pb-2 flex justify-center">
               <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 mb-1 hover:text-purple hover:border border-purple">
                 <a href="https://simple-shopping-cart-peach.vercel.app/">
-                  <img className="w-[20px]" src={screen} alt="" />
+                <span>Demo</span>
                 </a>
               </span>
               <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 ml-27 mb-1 hover:text-purple hover:border border-purple">
                 <a href="https://github.com/Chakravarthy-E/simple_shopping_cart">
-                  <img className="w-[20px]" src={github} alt="" />
+                <span>Github</span>
                 </a>
               </span>
             </div>
@@ -200,12 +200,12 @@ const Projects = () => {
             <div className="pt-1 pb-2 flex justify-center">
               <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 mb-1 hover:text-purple hover:border border-purple">
                 <a href="https://calender-blush.vercel.app/">
-                  <img className="w-[20px]" src={screen} alt="" />
+                <span>Demo</span>
                 </a>
               </span>
               <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 ml-27 mb-1 hover:text-purple hover:border border-purple">
                 <a href="https://github.com/Chakravarthy-E/calender">
-                  <img className="w-[20px]" src={github} alt="" />
+                <span>Github</span>
                 </a>
               </span>
             </div>

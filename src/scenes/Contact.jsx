@@ -112,6 +112,7 @@ const Contact = () => {
             )}
 
             <button
+            id="button"
               className="p-5 bg-white rounded-md font-semibold text-deep-blue mt-2 hover:bg-white hover:text-purple shadow-md hover:shadow-purple transition duration-500 font-righteous tracking-wide ml-1 "
               type="submit"
             >

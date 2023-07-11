@@ -25,30 +25,27 @@ const AboutMe = () => {
             </div>
             <div className="mt-10 text-gray-500 text-justify">
               <p className="mb-6 font-righteous tracking-normal">
-               Hello, I'm <span className="text-purple">Chakravarthy</span>,
-                A Full Stack Developer with a passion for
-                building innovative web applications. I completed a
-                comprehensive Full Stack Development course that equipped me
-                with the skills and knowledge to create dynamic and
-                user-friendly websites. In addition to my technical expertise, I
-                also hold an MBA degree, which provides me with a unique blend
-                of business acumen and technical proficiency. This combination
-                allows me to approach projects with a strategic mindset and
-                deliver solutions that align with both user needs and business
-                objectives. With a strong foundation in HTML, CSS, JavaScript,
-                and various frameworks like React and Node.js, I am proficient
-                in creating responsive and scalable web applications. My
-                experience includes working with databases like MongoDB and
-                MySQL, as well as utilizing modern development tools and
-                libraries.
+                Hello, I'm <span className="text-purple">Chakravarthy</span>, and I am a full stack developer.
+                With a strong passion for technology and problem-solving, I have
+                completed a comprehensive full stack development course.
+                Throughout my learning journey, I have gained expertise in both
+                front-end and back-end development, allowing me to create robust
+                and dynamic web applications. I have hands-on experience with
+                modern web development technologies such as HTML, CSS,
+                JavaScript, and popular frameworks like React.js for building
+                interactive user interfaces. On the back-end, I am proficient in
+                server-side programming languages such as Node.js and have
+                worked with frameworks like Express.js to develop scalable and
+                efficient APIs.
               </p>
             </div>
             <div className="mt-10 flex justify-start">
               <a
+                id="button"
                 className="bg-white text-deep-blue rounded-md py-3 px-7 font-semibold
            hover:bg-white sm:justify-center hover:text-purple shadow-md hover:shadow-purple transition duration-500 font-righteous ml-3 hover:scale-10"
                 /**change here contact to Conctact if error occurs */
-                href="https://drive.google.com/file/d/1XKJaoKPdM39n9NQTzL4TdX2eyUVCrxbY/view?usp=sharing"
+                href="https://drive.google.com/file/d/1Avn7I1nsQlRLJh1nZwS81u7FD4nTrreH/view?usp=sharing"
                 download
               >
                 RESUME

@@ -1,3 +1,5 @@
+import { gmail } from "../assets";
+import { location } from "../assets";
 import SocialMediaIcons from "../components/SocialMediaIcons";
 
 const Footer = () => {
@@ -11,12 +13,15 @@ const Footer = () => {
           <p className="font-righteous font-semibold text-3xl text-purple">
             CHAKRAVARTHY E
           </p>
-          <p className="font-righteous text-xl text-white">
-          <span className="text-purple">Mail :</span>  chakravarthy.8328@gmail.com
-          </p>
-          <p className="font-righteous text-xl text-white ">
-          <span className="text-purple">Location :</span>  Puttaparthi, Andhra Pradesh
-          </p>
+          <div className="font-righteous text-xl text-white flex align-middle gap-5 mt-3 mb-2">
+            <img src={gmail} alt="" className="w-8 bg-white" />:{" "}
+            <span>chakravarthy.8328@gmail.com</span>
+          </div>
+          <div className="font-righteous text-xl text-white flex align-middle gap-5 mt-3 mb-2">
+            <img src={location} alt="" className="w-8 bg-white" />:{" "}
+            <span>Puttaparthy, Andhra Pradesh</span>
+          </div>
+         
         </div>
       </div>
     </footer>

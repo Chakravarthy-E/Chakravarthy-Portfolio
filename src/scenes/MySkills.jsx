@@ -19,15 +19,9 @@ const MySkills = () => {
     { name: "React", image: REACTLOGO },
     { name: "Node.js", image: nodejs },
     { name: "MongoDB", image: mongoDB },
-    { name: "MySQL", image: MYSQL },
     { name: "Express", image: express },
     { name: "Bootstrap", image: BOOTSTRAP },
     { name: "Tailwind CSS", image: tailwind },
-    { name: "Postman", image: postman },
-    { name: "Figma", image: figma },
-    { name: "GitHub", image: github },
-    { name: "Git", image: git },
-    { name: "Netlify", image: netlify },
   ];
 
   const variants = {
@@ -55,18 +49,18 @@ const MySkills = () => {
         </motion.div>
       </div>
       <div className="mt-20 md:mt-0 mx-auto">
-        <div className="flex flex-wrap justify-evenly mt-5 md:justify-start my-10 gap-9">
+        <div className="flex flex-wrap justify-evenly mt-30 md:justify-start my-20 gap-9">
           {/* Asset images */}
           {skills.map((skill) => (
             <div
               key={skill.name}
-              className="relative"
+              className="relative w-20 h-20"
               onMouseEnter={() => handleSkillHover(skill.name)}
               onMouseLeave={() => handleSkillHover(null)}
             >
               <img src={skill.image} alt={skill.name} />
               {hoveredSkill === skill.name && (
-                <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 bg-purple text-white px-2 py-1 text-sm rounded-md">
+                <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 bg-black text-white px-3 py-1 text-xs rounded-md">
                   {skill.name}
                 </span>
               )}

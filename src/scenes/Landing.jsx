@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import SocialMediaIcons from "../components/SocialMediaIcons";
-import "./landing.css";
+import { hello } from "../assets";
+import "./loading.css";
 
 const Landing = ({ setSelectedPage }) => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
-  const words = ["MERN STACK DEVELOPER","FRONTEND DEVELOPER", "BACKEND DEVELOPER"];
+  const words = [
+    "FULL STACK DEVELOPER",
+    "FRONTEND DEVELOPER",
+    "BACKEND DEVELOPER",
+  ];
   const currentWord = words[currentWordIndex];
 
   useEffect(() => {
@@ -23,24 +27,21 @@ const Landing = ({ setSelectedPage }) => {
   return (
     <section
       id="home"
-      className="flex flex-col items-center justify-center h-screen"
+      className="flex items-center justify-center h-screen"
     >
-      <div className="text-center">
-        {/* Headings */}
+      <div className="container mx-auto flex flex-col md:flex-row items-center">
+        {/* Content */}
         <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={{
-            hidden: { opacity: 0, x: -50 },
-            visible: { opacity: 1, x: 0 },
-          }}
+          className="md:w-1/2 text-center md:text-left"
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <p className="text-1xl mt-[80px] font-righteous tracking-wider z-10 text-center md:text-start text-white">
+          <p className="text-1xl mt-8 md:mt-0 font-righteous tracking-wider text-white">
             Hi, I'm
           </p>
           <motion.p
-            className="text-4xl font-righteous tracking-wider z-10 text-center md:text-start text-purple ml-[-1%] transform h-7 bg-blue-400 w-1/5 hover:bg-blue-600 hover:scale-125 mb-4"
+            className="text-4xl font-righteous tracking-wider text-purple ml-[-1%] transform h-7 bg-blue-400 w-1/5 hover:bg-blue-600 hover:scale-125 mb-4"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
@@ -51,7 +52,7 @@ const Landing = ({ setSelectedPage }) => {
             </span>
           </motion.p>
           <motion.p
-            className="text-sm font-righteous tracking-wider z-10 text-center md:text-start text-white"
+            className="text-sm font-righteous tracking-wider text-white"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.5 }}
@@ -60,44 +61,50 @@ const Landing = ({ setSelectedPage }) => {
             {currentWord}
           </motion.p>
           <motion.p
-            className="mt-3 mb-7 text-gray-500 text-sm text-center md:text-justify font-righteous tracking-normal"
+            className="mt-3 mb-5 text-gray-500 text-sm md:text-justify font-righteous tracking-normal"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
-            A full-stack developer with a passion for creating innovative
-            digital solutions. I have expertise in both front-end and back-end
-            development, allowing me to build seamless web applications. From
-            designing user-friendly interfaces to implementing efficient
-            server-side logic, I bring a holistic approach to development. With
-            experience in databases, version control, and deployment platforms,
-            I deliver high-quality solutions. Let's collaborate to bring your
-            ideas to life with cutting-edge technology and exceptional user
-            experiences.
+            A passionate full-stack developer dedicated to
+            creating exceptional web applications and delivering immersive user
+            experiences. With a strong foundation in both front-end and back-end
+            development, I strive to bring ideas to life through elegant code
+            and innovative solutions.
           </motion.p>
-        </motion.div>
-        {/* Call to Action */}
-        <motion.div
-          className="flex mt-5 justify-center md:justify-start"
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, delay: 0.8 }}
-        >
-          <AnchorLink
-            className="bg-white shadow-purple text-deep-blue rounded-md py-3 px-7 font-semibold hover:bg-white shadow-md hover:shadow-purple hover:text-purple transition duration-500 font-righteous"
-            onClick={() => setSelectedPage("Contact")}
-            href="#contact"
+          {/* Call to Action */}
+          <motion.div
+            className="flex justify-center md:justify-start"
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.8 }}
           >
-            CONTACT ME
-          </AnchorLink>
+            <AnchorLink
+            id="button"
+              className="bg-white shadow-purple w-50 text-deep-blue rounded-md py-3 px-7 font-semibold hover:text-purple font-righteous"
+              onClick={() => setSelectedPage("Contact")}
+              href="#contact"
+            >
+              CONTACT ME
+            </AnchorLink>
+          </motion.div>
+          <motion.div
+            className="flex justify-center md:justify-start mt-5 ml-1"
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 1 }}
+          >
+            <SocialMediaIcons />
+          </motion.div>
         </motion.div>
+        {/* Image */}
         <motion.div
-          className="flex mt-5 justify-center md:justify-start ml-1"
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, delay: 1 }}
+          className="md:w-1/2 mt-10 md:mt-0"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 1.2 }}
         >
-          <SocialMediaIcons />
+          <img src={hello} alt="Hello Image" className="h-auto mx-auto" />
         </motion.div>
       </div>
     </section>

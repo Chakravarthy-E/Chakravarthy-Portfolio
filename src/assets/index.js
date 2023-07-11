@@ -29,27 +29,31 @@ import todolist from "./todolist.jpg";
 import logo from "./C-icon.png";
 import profile_pic from "./profile-pic.jpg";
 import rockpaper from "./rockpaper.png";
-import express from "./express.svg"
-import postman from "./postman.svg"
-import figma from "./figma.svg" 
-import github from "./github.svg"
-import git from "./git.svg"
-import netlify from "./netlify.svg"
-import screen from "./screen.svg"
-import chakri from "./chakri.jpg"
-import anime from "./anime.jpg"
-import desktop from "./desktop.svg"
-import coding from "./coding.svg"
-import about from "./about.svg"
-import contact3 from "./contact3.svg"
-import car_rental from "./car-rental.png"
-import shopping_cart from "./shopping_cart.png"
-import calender from "./calender.png"
-import crm from "./crm.png"
+import express from "./express.svg";
+import postman from "./postman.svg";
+import figma from "./figma.svg";
+import github from "./github.svg";
+import git from "./git.svg";
+import netlify from "./netlify.svg";
+import screen from "./screen.svg";
+import chakri from "./chakri.jpg";
+import anime from "./anime.jpg";
+import desktop from "./desktop.svg";
+import coding from "./coding.svg";
+import about from "./about.svg";
+import contact3 from "./contact3.svg";
+import car_rental from "./car-rental.png";
+import shopping_cart from "./shopping_cart.png";
+import calender from "./calender.png";
+import crm from "./crm.png";
+import hello from "./hello.svg";
+import gmail from "./gmail.svg";
+import location from "./location.svg";
 
 export {
   profile,
   crm,
+  hello,
   calender,
   shopping_cart,
   car_rental,
@@ -58,6 +62,7 @@ export {
   coding,
   desktop,
   anime,
+  gmail,
   chakri,
   github,
   screen,
@@ -77,6 +82,7 @@ export {
   postman,
   REACTLOGO,
   mongoDB,
+  location,
   MYSQL,
   nodejs,
   BOOTSTRAP,
