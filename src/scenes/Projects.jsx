@@ -6,6 +6,7 @@ import { car_rental } from "../assets";
 import { shopping_cart } from "../assets";
 import { calender } from "../assets";
 import { crm } from "../assets";
+import { nike } from "../assets";
 
 const container = {
   hidden: {},
@@ -73,7 +74,6 @@ const Projects = () => {
                 src={car_rental}
                 alt="Calculator App"
               />
-
             </div>
             <div className="px-6 py-4">
               <div className="font-sm font-righteous text-xl text-white flex justify-center">
@@ -89,7 +89,7 @@ const Projects = () => {
               </span>
               <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 ml-27 mb-1  hover:text-purple hover:border border-purple">
                 <a href="https://github.com/Chakravarthy-E/car_rental_app">
-                <span>Github</span>
+                  <span>Github</span>
                 </a>
               </span>
             </div>
@@ -112,12 +112,12 @@ const Projects = () => {
             <div className="pt-1 pb-2 flex justify-center">
               <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 mb-1   hover:text-purple hover:border border-purple">
                 <a href="https://crm-plus.netlify.app/">
-                <span>Demo</span>
+                  <span>Demo</span>
                 </a>
               </span>
               <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 ml-27 mb-1  hover:text-purple hover:border border-purple">
                 <a href="https://github.com/Chakravarthy-E/customer_relationship_management_app">
-                <span>Github</span>
+                  <span>Github</span>
                 </a>
               </span>
             </div>
@@ -130,7 +130,6 @@ const Projects = () => {
                 src={rockpaper}
                 alt="rockpaparscissors"
               />
-              
             </div>
             <div className="px-6 py-4">
               <div className="font-sm text-center font-righteous text-xl  text-white flex justify-center">
@@ -141,12 +140,12 @@ const Projects = () => {
             <div className="pt-1 pb-2 flex justify-center">
               <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 mb-1  hover:text-purple hover:border border-purple">
                 <a href="https://rockpaperscissorsusinghtmlcssjs.netlify.app/">
-                <span>Demo</span>
+                  <span>Demo</span>
                 </a>
               </span>
               <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 ml-27 mb-1 hover:text-purple hover:border border-purple">
                 <a href="https://github.com/Chakravarthy-E/Rock_Paper_Scissors_JS">
-                <span>Github</span>
+                  <span>Github</span>
                 </a>
               </span>
             </div>
@@ -160,7 +159,6 @@ const Projects = () => {
                 src={shopping_cart}
                 alt="todolist"
               />
-           
             </div>
             <div className="px-6 py-4">
               <div className="font-sm text-center font-righteous text-xl text-white flex justify-center">
@@ -171,12 +169,12 @@ const Projects = () => {
             <div className="pt-1 pb-2 flex justify-center">
               <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 mb-1 hover:text-purple hover:border border-purple">
                 <a href="https://simple-shopping-cart-peach.vercel.app/">
-                <span>Demo</span>
+                  <span>Demo</span>
                 </a>
               </span>
               <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 ml-27 mb-1 hover:text-purple hover:border border-purple">
                 <a href="https://github.com/Chakravarthy-E/simple_shopping_cart">
-                <span>Github</span>
+                  <span>Github</span>
                 </a>
               </span>
             </div>
@@ -189,7 +187,6 @@ const Projects = () => {
                 src={calender}
                 alt="todolist"
               />
-              
             </div>
             <div className="px-6 py-4">
               <div className="font-sm text-center font-righteous text-xl text-white flex justify-center">
@@ -200,12 +197,40 @@ const Projects = () => {
             <div className="pt-1 pb-2 flex justify-center">
               <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 mb-1 hover:text-purple hover:border border-purple">
                 <a href="https://calender-blush.vercel.app/">
-                <span>Demo</span>
+                  <span>Demo</span>
                 </a>
               </span>
               <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 ml-27 mb-1 hover:text-purple hover:border border-purple">
                 <a href="https://github.com/Chakravarthy-E/calender">
-                <span>Github</span>
+                  <span>Github</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        {/**Nike */}
+          <div className="max-w-md mx-auto w-[300px] bg-black shadow-md  shadow-purple rounded border border-gray-800 ml-1  overflow-hidden md:max-w-2xl my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out">
+            <div className="image-container relative">
+              <img
+                className="w-[332px] h-[240px] object-cover"
+                src={nike}
+                alt="todolist"
+              />
+            </div>
+            <div className="px-6 py-4">
+              <div className="font-sm text-center font-righteous text-xl text-white flex justify-center">
+                Nike
+              </div>
+              <p className="text-gray-700 text-base"></p>
+            </div>
+            <div className="pt-1 pb-2 flex justify-center">
+              <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 mb-1 hover:text-purple hover:border border-purple">
+                <a href="https://nike-tailwindcss.netlify.app/">
+                  <span>Demo</span>
+                </a>
+              </span>
+              <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 ml-27 mb-1 hover:text-purple hover:border border-purple">
+                <a href="https://github.com/Chakravarthy-E/nike_tailwindcss">
+                  <span>Github</span>
                 </a>
               </span>
             </div>

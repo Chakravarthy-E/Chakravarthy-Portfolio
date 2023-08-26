@@ -47,11 +47,16 @@ import shopping_cart from "./shopping_cart.png";
 import calender from "./calender.png";
 import crm from "./crm.png";
 import hello from "./hello.svg";
-import gmail from "./gmail.svg";
 import location from "./location.svg";
+import nike from "./nike.png"
+import location123 from "./location123.svg"
+import gmail from "./gmail-svgrepo-com.svg"
 
 export {
   profile,
+  location123,
+  gmail,
+  nike,
   crm,
   hello,
   calender,
@@ -62,7 +67,6 @@ export {
   coding,
   desktop,
   anime,
-  gmail,
   chakri,
   github,
   screen,

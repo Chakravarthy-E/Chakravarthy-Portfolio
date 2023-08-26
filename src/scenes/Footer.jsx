@@ -1,4 +1,4 @@
-import { gmail } from "../assets";
+import { gmail, location123 } from "../assets";
 import { location } from "../assets";
 import SocialMediaIcons from "../components/SocialMediaIcons";
 
@@ -14,14 +14,13 @@ const Footer = () => {
             CHAKRAVARTHY E
           </p>
           <div className="font-righteous text-xl text-white flex align-middle gap-5 mt-3 mb-2">
-            <img src={gmail} alt="" className="w-8 bg-white" />:{" "}
+            <img src={gmail} alt="" width={35} />
             <span>chakravarthy.8328@gmail.com</span>
           </div>
           <div className="font-righteous text-xl text-white flex align-middle gap-5 mt-3 mb-2">
-            <img src={location} alt="" className="w-8 bg-white" />:{" "}
+            <img src={location123} alt="" width={35} />
             <span>Puttaparthy, Andhra Pradesh</span>
           </div>
-         
         </div>
       </div>
     </footer>

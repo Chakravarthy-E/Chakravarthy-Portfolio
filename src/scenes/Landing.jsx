@@ -25,10 +25,7 @@ const Landing = ({ setSelectedPage }) => {
   }, [words.length]);
 
   return (
-    <section
-      id="home"
-      className="flex items-center justify-center h-screen"
-    >
+    <section id="home" className="flex items-center justify-center h-screen">
       <div className="container mx-auto flex flex-col md:flex-row items-center">
         {/* Content */}
         <motion.div
@@ -66,11 +63,11 @@ const Landing = ({ setSelectedPage }) => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
-            A passionate full-stack developer dedicated to
-            creating exceptional web applications and delivering immersive user
-            experiences. With a strong foundation in both front-end and back-end
-            development, I strive to bring ideas to life through elegant code
-            and innovative solutions.
+            A passionate full-stack developer dedicated to creating exceptional
+            web applications and delivering immersive user experiences. With a
+            strong foundation in both front-end and back-end development, I
+            strive to bring ideas to life through elegant code and innovative
+            solutions.
           </motion.p>
           {/* Call to Action */}
           <motion.div
@@ -80,7 +77,7 @@ const Landing = ({ setSelectedPage }) => {
             transition={{ duration: 0.5, delay: 0.8 }}
           >
             <AnchorLink
-            id="button"
+              id="button"
               className="bg-white shadow-purple w-50 text-deep-blue rounded-md py-3 px-7 font-semibold hover:text-purple font-righteous"
               onClick={() => setSelectedPage("Contact")}
               href="#contact"
