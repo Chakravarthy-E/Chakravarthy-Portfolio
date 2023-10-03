@@ -46,10 +46,10 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className="text-5xl text-purple font-righteous z-10 text-center md:text-start">
-            Chakravarthy
+          <p className=" text-4xl font-righteous text-purple z-10 l:text-xl text-center md:text-start">
+            CHAKRAVARTHY {" "}E
           </p>
-          <p className="text-2xl font-righteous z-10 text-center md:text-start">
+          <p className=" font-righteous z-10 text-center md:text-start">
             Full Stack Web Developer
           </p>
 
