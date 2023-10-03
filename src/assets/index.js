@@ -51,10 +51,14 @@ import location from "./location.svg";
 import nike from "./nike.png"
 import location123 from "./location123.svg"
 import gmail from "./gmail-svgrepo-com.svg"
+import typeScript from "./typescript-logo-svgrepo-com.svg"
+import nextjs from "./nextjs-svgrepo-com.svg"
 
 export {
   profile,
   location123,
+  typeScript,
+  nextjs,
   gmail,
   nike,
   crm,

@@ -6,10 +6,7 @@ const Footer = () => {
   return (
     <footer className="h-80 bg-black pt-10flex flex-col items-center">
       <div className="w-10/12 mx-auto text-center">
-        <div className="flex justify-start">
-          <SocialMediaIcons />
-        </div>
-        <div className="text-start">
+        <div className="text-start mt-10 flex justify-center items-center flex-col">
           <p className="font-righteous font-semibold text-3xl text-purple">
             CHAKRAVARTHY E
           </p>
@@ -20,6 +17,9 @@ const Footer = () => {
           <div className="font-righteous text-xl text-white flex align-middle gap-5 mt-3 mb-2">
             <img src={location123} alt="" width={35} />
             <span>Puttaparthy, Andhra Pradesh</span>
+          </div>
+          <div className="flex justify-start">
+          <SocialMediaIcons />
           </div>
         </div>
       </div>

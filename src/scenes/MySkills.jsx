@@ -1,7 +1,25 @@
 import React, { useState } from "react";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
-import { HTML, CSS, JS, REACTLOGO, nodejs, mongoDB, MYSQL, express, BOOTSTRAP, tailwind, postman, figma, github, git, netlify } from "../assets";
+import {
+  HTML,
+  CSS,
+  JS,
+  REACTLOGO,
+  nodejs,
+  mongoDB,
+  MYSQL,
+  express,
+  BOOTSTRAP,
+  tailwind,
+  postman,
+  figma,
+  github,
+  git,
+  netlify,
+  nextjs,
+  typeScript,
+} from "../assets";
 
 const MySkills = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
@@ -16,12 +34,17 @@ const MySkills = () => {
     { name: "HTML", image: HTML },
     { name: "CSS", image: CSS },
     { name: "JavaScript", image: JS },
+    { name: "TypeScript", image: typeScript },
     { name: "React", image: REACTLOGO },
+    { name: "Nextjs", image: nextjs },
     { name: "Node.js", image: nodejs },
     { name: "MongoDB", image: mongoDB },
     { name: "Express", image: express },
     { name: "Bootstrap", image: BOOTSTRAP },
     { name: "Tailwind CSS", image: tailwind },
+    { name: "Postman", image: postman },
+    { name: "Github", image: github },
+    { name: "Git", image: git },
   ];
 
   const variants = {

@@ -45,7 +45,7 @@ const AboutMe = () => {
                 className="bg-white text-deep-blue rounded-md py-3 px-7 font-semibold
            hover:bg-white sm:justify-center hover:text-purple shadow-md hover:shadow-purple transition duration-500 font-righteous ml-3 hover:scale-10"
                 /**change here contact to Conctact if error occurs */
-                href="https://drive.google.com/file/d/1Avn7I1nsQlRLJh1nZwS81u7FD4nTrreH/view?usp=sharing"
+                href="https://drive.google.com/file/d/17jP76qCEKDuQjeD-u7SjrIlyZys4rwc5/view?usp=sharing"
                 download
               >
                 RESUME
