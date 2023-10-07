@@ -224,7 +224,7 @@ const Projects = () => {
             </div>
             <div className="pt-1 pb-2 flex justify-center">
               <span className="inline-block bg-black rounded-lg px-5 py-2 text-sm font-semibold text-white mr-2 mb-1 hover:text-purple hover:border border-purple">
-                <a href="https://nike-tailwindcss.netlify.app/">
+                <a href="https://nike-tailwindcss-lhaacdz8r-chakravarthy-e.vercel.app/">
                   <span>Demo</span>
                 </a>
               </span>
