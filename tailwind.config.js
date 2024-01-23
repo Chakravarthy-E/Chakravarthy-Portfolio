@@ -1,30 +1,29 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
-  mode:"jit",
+  mode: "jit",
   theme: {
     extend: {
-      colors:{
-        "input-color":"#1F1D36",
+      colors: {
+        "input-color": "#1F1D36",
         "deep-blue": "#010026",
         blue: "#2CBCE9",
         red: "#DC4492",
-        name:"#BFDCE5",
-        h1:"#DBDFFD",
-        h2:"#646FD4",
-        violet:"#16213E",
-        skyblue:"#2F58CD",
+        name: "#BFDCE5",
+        h1: "#DBDFFD",
+        h2: "#646FD4",
+        violet: "#16213E",
+        skyblue: "#2F58CD",
         yellow: "#FDCC49",
         grey: "#ededed",
-        brown:"#51557E",
-        thickblue:"#0E6BA8",
+        brown: "#51557E",
+        thickblue: "#0E6BA8",
         "dark-grey": "#757575",
         "opaque-black": "rgba(0,0,0,0.35)",
-        "deep-black":"#20252E",
-        navColor:"#404258",
-        purple:"#865DFF",
-        "card-color":"#18122B"
-    
+        "deep-black": "#20252E",
+        navColor: "#404258",
+        purple: "#865DFF",
+        "card-color": "#18122B",
       },
       backgroundImage: (theme) => ({
         "gradient-rainbow":
@@ -34,10 +33,11 @@ module.exports = {
           "linear-gradient(90deg, #24CBFF 14.53%, #FC59FF 69.36%, #FFBD0C 117.73%)",
       }),
       fontFamily: {
-        playfair :["Playfair Display","serif"],
-        openSans:["Open Sans", "Sans-serif"],
-        pacifico:[ 'Pacifico', 'cursive'],
-        righteous: ['Righteous', 'cursive']
+        playfair: ["Playfair Display", "serif"],
+        openSans: ["Open Sans", "Sans-serif"],
+        pacifico: ["Pacifico", "cursive"],
+        righteous: ["Righteous", "cursive"],
+        mont: ["Montserrat", "sans-serif"],
       },
       content: {
         brush: "url('./assets/brush.png')",
@@ -56,4 +56,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};

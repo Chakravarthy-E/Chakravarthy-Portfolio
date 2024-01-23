@@ -46,14 +46,14 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <p className=" text-4xl font-righteous text-purple z-10 l:text-xl text-center md:text-start">
+          <p className=" text-4xl font-mont font-bold text-purple z-10 l:text-xl text-center md:text-start">
             CHAKRAVARTHY {" "}E
           </p>
-          <p className=" font-righteous z-10 text-center md:text-start">
+          <p className=" font-mont z-10 text-center md:text-start">
             Full Stack Web Developer
           </p>
 
-          <p className="mt-10 font-righteous font-thin mb-7 text-sm text-center md:text-start">
+          <p className="mt-10 font-mont font-thin mb-7 text-sm text-center md:text-start">
             A passionate full-stack developer dedicated to creating exceptional
             web applications and delivering immersive user experiences. With a
             strong foundation in both front-end and back-end development, I
@@ -76,7 +76,7 @@ const Landing = ({ setSelectedPage }) => {
         >
           <AnchorLink
             id="button"
-            className="bg-white shadow-purple w-50 text-deep-blue rounded-md py-3 px-7 font-semibold hover:text-purple font-righteous"
+            className="bg-white shadow-purple w-50 text-deep-blue rounded-md py-3 px-7 font-semibold hover:text-purple font-mont"
             onClick={() => setSelectedPage("Contact")}
             href="#contact"
           >

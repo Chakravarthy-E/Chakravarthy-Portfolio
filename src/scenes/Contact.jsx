@@ -1,7 +1,5 @@
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
-import { contact } from "../assets";
-import {contact3} from "../assets"
 
 const Contact = () => {
   const {
@@ -33,7 +31,7 @@ const Contact = () => {
         className="flex justify-start w-full"
       >
         <div>
-          <p className="font-righteous font-semibold text-4xl text-purple mb-2">
+          <p className="font-mont font-bold text-4xl text-purple mb-2">
             <span className="text-white">CONTACT ME</span> TO GET STARTED
           </p>
         </div>
@@ -113,7 +111,7 @@ const Contact = () => {
 
             <button
             id="button"
-              className="p-5 bg-white rounded-md font-semibold text-deep-blue mt-2 hover:bg-white hover:text-purple shadow-md hover:shadow-purple transition duration-500 font-righteous tracking-wide ml-1 "
+              className="p-5 bg-white rounded-md font-semibold text-deep-blue mt-2 hover:bg-white hover:text-purple shadow-md hover:shadow-purple transition duration-500 font-mont tracking-wide ml-1 "
               type="submit"
             >
               SEND ME A MESSAGE

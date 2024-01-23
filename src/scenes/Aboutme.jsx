@@ -1,73 +1,65 @@
-import { motion } from "framer-motion";
-import { coding } from "../assets";
+import { AboutInfo } from "../utils/aboutInfo";
+
 const AboutMe = () => {
   return (
-    <section
-      id="about"
-      className="pt-20 pb-24 mt-5 ml mb-[-20%] flex justify-center"
-    >
-      <div className="md:flex md:justify-center md:items-center md:gap-16 px-10 md:px-0">
-        <div className="md:w-1/2">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.5 }}
-            variants={{
-              hidden: { opacity: 0, x: -50 },
-              visible: { opacity: 1, x: 0 },
-            }}
-          >
-            <div>
-              <p className="font-righteous font-semibold text-4xl mb-2">
-                ABOUT <span className="text-purple">ME</span>
-              </p>
-            </div>
-            <div className="mt-10 text-gray-500 text-justify">
-              <p className="mb-6 font-righteous tracking-normal">
-                Hello, I'm <span className="text-purple">Chakravarthy</span>, and I am a full stack developer.
-                With a strong passion for technology and problem-solving, I have
-                completed a comprehensive full stack development course.
-                Throughout my learning journey, I have gained expertise in both
-                front-end and back-end development, allowing me to create robust
-                and dynamic web applications. I have hands-on experience with
-                modern web development technologies such as HTML, CSS,
-                JavaScript, and popular frameworks like React.js for building
-                interactive user interfaces. On the back-end, I am proficient in
-                server-side programming languages such as Node.js and have
-                worked with frameworks like Express.js to develop scalable and
-                efficient APIs.
-              </p>
-            </div>
-            <div className="mt-10 flex justify-start">
-              <a
-                id="button"
-                className="bg-white text-deep-blue rounded-md py-3 px-7 font-semibold
-           hover:bg-white sm:justify-center hover:text-purple shadow-md hover:shadow-purple transition duration-500 font-righteous ml-3 hover:scale-10"
-                /**change here contact to Conctact if error occurs */
-                href="https://drive.google.com/file/d/17jP76qCEKDuQjeD-u7SjrIlyZys4rwc5/view?usp=sharing"
-                download
-              >
-                RESUME
-              </a>
-            </div>
-          </motion.div>
+    <section id="about" className="py-8 md:py-16">
+      <div className="max-w-screen-xl mx-auto px-4 font-mont">
+        <h1 className=" text-white  text-center font-bold text-4xl mb-5 uppercase">
+          About <span className="text-purple">Me</span>
+        </h1>
+        <div className="flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-10">
+          <div className="w-full md:w-1/2">
+            <h1 className="text-xl font-bold mb-1 text-white">Experience</h1>
+            {AboutInfo.map((aboutme, index) => (
+              <div key={index} className="space-y-4">
+                {aboutme.experience &&
+                  Array.isArray(aboutme.experience) &&
+                  aboutme.experience.map((exp, expIndex) => (
+                    <div
+                      key={expIndex}
+                      className="bg-purple px-5 py-3 space-y-1 rounded-lg mb-4 md:mb-0"
+                    >
+                      <p className=" text-xl font-bold">{exp.company}</p>
+                      <div className=" flex justify-between items-center">
+                        <p className="text-sm ">{exp.role}</p>
+                        <p className="text-xs ">{exp.duration}</p>
+                      </div>
+                      <p className="text-xs text-gray-200">
+                        {exp.description}
+                      </p>
+                    </div>
+                  ))}
+              </div>
+            ))}
+          </div>
+          <div className="w-full md:w-1/2 font-mont">
+            <h1 className="text-xl font-bold mb-1 text-white">Education</h1>
+            {AboutInfo.map((aboutme, index) => (
+              <div key={index} className="space-y-4">
+                {aboutme.education &&
+                  Array.isArray(aboutme.education) &&
+                  aboutme.education.map((exp, expIndex) => (
+                    <div
+                      key={expIndex}
+                      className="bg-purple text-white px-5 py-3 rounded-lg mb-4"
+                    >
+                      <p className=" font-bold">{exp.name}</p>
+                      <p className="text-xs ">{exp.course}</p>
+                    </div>
+                  ))}
+              </div>
+            ))}
+          </div>
         </div>
-        <div className="mt-16 md:mt-0 md:w-1/2">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.5 }}
-            variants={{
-              hidden: { opacity: 0, x: 50 },
-              visible: { opacity: 1, x: 0 },
-            }}
+        <div className="mt-8 flex justify-center md:justify-end items-center">
+          <a
+            id="button"
+            className="bg-white text-deep-blue rounded-md py-3 px-7 font-semibold hover:bg-white hover:text-purple shadow-md hover:shadow-purple transition duration-500 font-mont ml-3 hover:scale-10"
+            href="https://drive.google.com/file/d/17jP76qCEKDuQjeD-u7SjrIlyZys4rwc5/view?usp=sharing"
+            download
           >
-            {/**
-             */}
-            <img src={coding} alt="Profile" className="w-96 h-auto shadow-lg" />
-          </motion.div>
+            RESUME
+          </a>
         </div>
       </div>
     </section>

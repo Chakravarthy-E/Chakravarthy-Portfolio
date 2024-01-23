@@ -43,12 +43,12 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
 
   return (
     <nav
-      className={`z-40 w-full fixed top-0 py-6 pt-3 pb-2 ${navbarBackground}`}
+      className={`z-40 w-full fixed  font-mont top-0 py-6 pt-3 pb-2 ${navbarBackground}`}
     >
       <div className="flex items-center justify-between mx-auto w-5/6">
         <AnchorLink onClick={() => setSelectedPage("home")} href="#home">
           <h4
-            className={`font-righteous text-2xl hover:text-purple text-white font-bold`}
+            className={`font-mont text-2xl hover:text-purple text-white font-bold`}
           >
             Chakri
           </h4>
