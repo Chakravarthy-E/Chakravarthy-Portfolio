@@ -32,7 +32,7 @@ function App() {
     return <Loading />;
   }
   return (
-    <div className="app">
+    <div className="app  ">
       <NavBar
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}

@@ -1,8 +1,11 @@
 import { AboutInfo } from "../utils/aboutInfo";
+import { IoMdSchool } from "react-icons/io";
+import { FaBuilding } from "react-icons/fa";
+import { constants } from "../utils/constants";
 
 const AboutMe = () => {
   return (
-    <section id="about" className="py-8 md:py-16">
+    <section id="about" className="py-4 md:py-10">
       <div className="max-w-screen-xl mx-auto px-4 font-mont">
         <h1 className=" text-white  text-center font-bold text-4xl mb-5 uppercase">
           About <span className="text-purple">Me</span>
@@ -17,16 +20,18 @@ const AboutMe = () => {
                   aboutme.experience.map((exp, expIndex) => (
                     <div
                       key={expIndex}
+                      data-aos="flip-left"
                       className="bg-purple px-5 py-3 space-y-1 rounded-lg mb-4 md:mb-0"
                     >
-                      <p className=" text-xl font-bold">{exp.company}</p>
-                      <div className=" flex justify-between items-center">
-                        <p className="text-sm ">{exp.role}</p>
-                        <p className="text-xs ">{exp.duration}</p>
+                      <div className="flex items-center space-x-1">
+                        <FaBuilding size={20} />
+                        <p className=" text-xl font-bold">{exp.company}</p>
                       </div>
-                      <p className="text-xs text-gray-200">
-                        {exp.description}
-                      </p>
+                      <div className=" flex justify-between items-center">
+                        <p className="text-sm font-semibold ">{exp.role}</p>
+                        <p className="text-xs  font-semibold">{exp.duration}</p>
+                      </div>
+                      <p className="text-xs text-gray-200">{exp.description}</p>
                     </div>
                   ))}
               </div>
@@ -35,7 +40,7 @@ const AboutMe = () => {
           <div className="w-full md:w-1/2 font-mont">
             <h1 className="text-xl font-bold mb-1 text-white">Education</h1>
             {AboutInfo.map((aboutme, index) => (
-              <div key={index} className="space-y-4">
+              <div key={index} data-aos="zoom-in-up" className="space-y-4">
                 {aboutme.education &&
                   Array.isArray(aboutme.education) &&
                   aboutme.education.map((exp, expIndex) => (
@@ -43,7 +48,13 @@ const AboutMe = () => {
                       key={expIndex}
                       className="bg-purple text-white px-5 py-3 rounded-lg mb-4"
                     >
-                      <p className=" font-bold">{exp.name}</p>
+                      <div className="flex items-center justify-between">
+                        <div className=" flex items-center space-x-1 justify-center">
+                          <IoMdSchool size={20} />
+                          <p className=" font-bold">{exp.name}</p>
+                        </div>
+                        <p className=" font-semibold text-xs">{exp.duration}</p>
+                      </div>
                       <p className="text-xs ">{exp.course}</p>
                     </div>
                   ))}
@@ -53,9 +64,8 @@ const AboutMe = () => {
         </div>
         <div className="mt-8 flex justify-center md:justify-end items-center">
           <a
-            id="button"
             className="bg-white text-deep-blue rounded-md py-3 px-7 font-semibold hover:bg-white hover:text-purple shadow-md hover:shadow-purple transition duration-500 font-mont ml-3 hover:scale-10"
-            href="https://drive.google.com/file/d/17jP76qCEKDuQjeD-u7SjrIlyZys4rwc5/view?usp=sharing"
+            href={constants.resume}
             download
           >
             RESUME

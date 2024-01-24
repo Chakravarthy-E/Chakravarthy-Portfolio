@@ -15,15 +15,22 @@ export const AboutInfo = [
       {
         name: "10x Academy",
         course: "Full Stack Development",
+        duration: "Oct 2022  - Jun 2023",
       },
       {
         name: "Vikrama Simhapuri University",
         course: "Masters of Business Management",
+        duration: "Feb 2020  - Aug 2022",
       },
       {
         name: "Managalakara Degree College",
         course: "Bachelor of Computer Applications",
+        duration: "Jun 2017  - Mar 2020",
       },
     ],
+  },
+  {
+    resume:
+      "https://docs.google.com/document/d/1Z-zIymazcok1OIge71mnQIAFL87GvlVUGRaas2KhVMI/edit?usp=drive_link",
   },
 ];

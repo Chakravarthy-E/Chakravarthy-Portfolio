@@ -48,15 +48,15 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
       <div className="flex items-center justify-between mx-auto w-5/6">
         <AnchorLink onClick={() => setSelectedPage("home")} href="#home">
           <h4
-            className={`font-mont text-2xl hover:text-purple text-white font-bold`}
+            className={`font-mont text-2xl italic hover:text-purple text-white font-bold`}
           >
-            Chakri
+            {" <Chakri />"}
           </h4>
         </AnchorLink>
 
         {/* Desktop nav */}
         {isAbovesSmallScreens ? (
-          <div className="flex justify-between gap-12 font-opansans text-sm font-semibold ">
+          <div className="flex justify-between gap-12 font-opansans text-base font-semibold ">
             <Link
               page="Home"
               selectedPage={selectedPage}
@@ -99,12 +99,11 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
             {/* Close button */}
             <div className="flex justify-end p-12 ">
               <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-               
-              <img src={CloseIcon} alt="close icon" className="rounded-sm" />
+                <img src={CloseIcon} alt="close icon" className="rounded-sm" />
               </button>
             </div>
             {/* Menu items */}
-            <div className="flex flex-col gap-10 ml-[33%] text-1xl text-white">
+            <div className="flex flex-col gap-10 ml-[33%] text-xl text-white">
               <Link
                 page="Home"
                 selectedPage={selectedPage}

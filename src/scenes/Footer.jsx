@@ -1,24 +1,23 @@
-import { gmail, location123 } from "../assets";
+import { MdOutlineEmail } from "react-icons/md";
+import { CiLocationOn } from "react-icons/ci";
 import SocialMediaIcons from "../components/SocialMediaIcons";
 
 const Footer = () => {
   return (
-    <footer className="h-80 bg-black pt-10flex flex-col items-center">
+    <footer className="h-80 bg-black pt-10 flex flex-col items-center">
       <div className="w-10/12 mx-auto text-center">
-        <div className="text-start mt-10 flex justify-center items-center flex-col">
-          <p className="font-mont font-semibold text-3xl text-purple">
-            CHAKRAVARTHY E
-          </p>
-          <div className="font-mont text-xl text-white flex align-middle gap-5 mt-3 mb-2">
-            <img src={gmail} alt="" width={35} />
+        <div className="text-start mt-10 flex justify-center items-center flex-col space-y-2">
+          <p className="font-mont text-xl font-semibold  text-purple">CHAKRAVARTHY E</p>
+          <div className="font-mont text-base text-white flex  items-center space-x-2">
+            <MdOutlineEmail size={35} />
             <span>chakravarthy.8328@gmail.com</span>
           </div>
-          <div className="font-mont text-xl text-white flex align-middle gap-5 mt-3 mb-2">
-            <img src={location123} alt="" width={35} />
+          <div className="font-mont text-base text-white flex align-middle  items-center space-x-2">
+            <CiLocationOn size={35} />
             <span>Puttaparthy, Andhra Pradesh</span>
           </div>
           <div className="flex justify-start">
-          <SocialMediaIcons />
+            <SocialMediaIcons />
           </div>
         </div>
       </div>
