@@ -7,7 +7,7 @@ const MySkills = () => {
       <div className="max-w-screen-xl mx-auto px-4 font-mont">
         <div className="md:flex md:justify-center md:items-center md:gap-16 mt-10">
           <div>
-            <p className="font-mont text-center font-bold text-4xl mb-5 mt-7">
+            <p className="font-mont text-center font-bold text-4xl py-14 mt-7">
               MY TECHNICAL<span className="text-purple"> SKILLS</span>
             </p>
           </div>

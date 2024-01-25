@@ -5,9 +5,9 @@ import { constants } from "../utils/constants";
 
 const AboutMe = () => {
   return (
-    <section id="about" className="py-4 md:py-10">
+    <section id="about" className="py-16 md:py-10">
       <div className="max-w-screen-xl mx-auto px-4 font-mont">
-        <h1 className=" text-white  text-center font-bold text-4xl mb-5 uppercase">
+        <h1 className=" text-white  text-center font-bold text-4xl py-14 uppercase">
           About <span className="text-purple">Me</span>
         </h1>
         <div className="flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-10">
@@ -23,7 +23,7 @@ const AboutMe = () => {
                       data-aos="flip-left"
                       className="bg-purple px-5 py-3 space-y-1 rounded-lg mb-4 md:mb-0"
                     >
-                      <div className="flex items-center space-x-1">
+                      <div className="flex items-center  space-x-1">
                         <FaBuilding size={20} />
                         <p className=" text-xl font-bold">{exp.company}</p>
                       </div>
@@ -40,16 +40,17 @@ const AboutMe = () => {
           <div className="w-full md:w-1/2 font-mont">
             <h1 className="text-xl font-bold mb-1 text-white">Education</h1>
             {AboutInfo.map((aboutme, index) => (
-              <div key={index} data-aos="zoom-in-up" className="space-y-4">
+              <div key={index} className="space-y-4">
                 {aboutme.education &&
                   Array.isArray(aboutme.education) &&
                   aboutme.education.map((exp, expIndex) => (
                     <div
                       key={expIndex}
+                      data-aos="zoom-out-up"
                       className="bg-purple text-white px-5 py-3 rounded-lg mb-4"
                     >
-                      <div className="flex items-center justify-between">
-                        <div className=" flex items-center space-x-1 justify-center">
+                      <div className="flex items-center first-letter: justify-between">
+                        <div className=" flex items-center  space-x-1 justify-center">
                           <IoMdSchool size={20} />
                           <p className=" font-bold">{exp.name}</p>
                         </div>
@@ -64,6 +65,7 @@ const AboutMe = () => {
         </div>
         <div className="mt-8 flex justify-center md:justify-end items-center">
           <a
+            data-aos="zoom-out-up"
             className="bg-white text-deep-blue rounded-md py-3 px-7 font-semibold hover:bg-white hover:text-purple shadow-md hover:shadow-purple transition duration-500 font-mont ml-3 hover:scale-10"
             href={constants.resume}
             download

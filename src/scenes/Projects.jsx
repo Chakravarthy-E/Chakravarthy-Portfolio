@@ -3,18 +3,11 @@ import { ProjectsInfo } from "../utils/projectsInfo";
 import { FaLink } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 
-const container = {
-  hidden: {},
-  visible: {
-    transition: { staggerChildren: 0.2 },
-  },
-};
-
 const Projects = () => {
   return (
     <section id="projects" className="py-4 ">
       <div>
-        <p className="font-mont text-center font-bold text-4xl mb-8">
+        <p className="font-mont text-center font-bold text-4xl py-14">
           MY <span className="text-purple">PROJECTS</span>
         </p>
       </div>
@@ -26,7 +19,7 @@ const Projects = () => {
             key={project.name}
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
-            className="max-w-md mx-auto w-full md:w-[48%] bg-black  rounded-md shadow-lg overflow-hidden my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out hover:shadow-xl"
+            className="max-w-md mx-auto w-full md:w-[48%] bg-black border border-gray-900 rounded-md shadow-lg overflow-hidden my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out hover:shadow-xl"
           >
             <div className="relative">
               <img

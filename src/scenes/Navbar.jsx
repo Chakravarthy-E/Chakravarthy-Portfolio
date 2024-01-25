@@ -50,7 +50,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
           <h4
             className={`font-mont text-2xl italic hover:text-purple text-white font-bold`}
           >
-            {" <Chakri />"}
+            {" <Chakravarthy />"}
           </h4>
         </AnchorLink>
 

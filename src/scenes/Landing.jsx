@@ -1,29 +1,25 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 import { motion } from "framer-motion";
 import { FaAngleDown } from "react-icons/fa";
+import TypeWriter from "typewriter-effect";
 
 const Landing = ({ setSelectedPage }) => {
-  const name = ["C", "H", "A", "K", "R", "A", "V", "A", "R", "T", "H", "Y"];
-  const profession = [
-    "S",
-    "o",
-    "f",
-    "t",
-    "w",
-    "a",
-    "r",
-    "e",
+  const name = [
+    "C",
+    "H",
+    "A",
+    "K",
+    "R",
+    "A",
+    "V",
+    "A",
+    "R",
+    "T",
+    "H",
+    "Y",
     " ",
-    "D",
-    "e",
-    "v",
-    "e",
-    "l",
-    "o",
-    "p",
-    "e",
-    "r",
+    "E",
   ];
 
   return (
@@ -50,21 +46,19 @@ const Landing = ({ setSelectedPage }) => {
             ))}
           </div>
 
-          <div>
-            {profession.map((el, i) => (
-              <motion.span
-                className="text-sm sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-mont font-semibold text-purple uppercase"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{
-                  duration: 0.25,
-                  delay: i / 10,
-                }}
-                key={i}
-              >
-                {el}
-              </motion.span>
-            ))}
+          <div className="text-sm sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-mont font-semibold text-purple uppercase">
+            <TypeWriter
+              options={{
+                strings: [
+                  "A Software Engineer",
+                  "A Problem Solver",
+                  "A Full Stack Developer",
+                ],
+                pauseFor: 1500,
+                autoStart: true,
+                loop: true,
+              }}
+            />
           </div>
         </div>
       </div>
