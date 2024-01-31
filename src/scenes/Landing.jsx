@@ -19,7 +19,6 @@ const Landing = ({ setSelectedPage }) => {
     "H",
     "Y",
     " ",
-    "E",
   ];
 
   return (
@@ -29,6 +28,7 @@ const Landing = ({ setSelectedPage }) => {
     >
       <div className="z-30 flex flex-col items-center justify-center space-y-6 text-center h-full">
         <div className="mb-6">
+        <p className="text-start text-xl my-4 font-mono text-purple font-semibold">Welcome, I'm</p>
           <div>
             {name.map((el, i) => (
               <motion.span
@@ -54,9 +54,10 @@ const Landing = ({ setSelectedPage }) => {
                   "A Problem Solver",
                   "A Full Stack Developer",
                 ],
-                pauseFor: 1500,
+                pauseFor: 2000,
                 autoStart: true,
                 loop: true,
+                delay: "natural",
               }}
             />
           </div>

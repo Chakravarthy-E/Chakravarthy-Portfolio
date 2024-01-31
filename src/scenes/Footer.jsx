@@ -4,7 +4,7 @@ import SocialMediaIcons from "../components/SocialMediaIcons";
 
 const Footer = () => {
   return (
-    <footer className="h-80 bg-black pt-10 flex flex-col items-center">
+    <footer className="h-80  pt-10 flex flex-col items-center">
       <div className="w-10/12 mx-auto text-center">
         <div className="text-start mt-10 flex justify-center items-center flex-col space-y-2">
           <p className="font-mont text-xl font-semibold  text-purple">CHAKRAVARTHY E</p>

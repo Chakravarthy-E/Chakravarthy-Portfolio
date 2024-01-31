@@ -21,7 +21,7 @@ const AboutMe = () => {
                     <div
                       key={expIndex}
                       data-aos="flip-left"
-                      className="bg-purple px-5 py-3 space-y-1 rounded-lg mb-4 md:mb-0"
+                      className=" border border-purple px-5 py-3 space-y-1 rounded-lg mb-4 md:mb-0"
                     >
                       <div className="flex items-center  space-x-1">
                         <FaBuilding size={20} />
@@ -47,7 +47,7 @@ const AboutMe = () => {
                     <div
                       key={expIndex}
                       data-aos="zoom-out-up"
-                      className="bg-purple text-white px-5 py-3 rounded-lg mb-4"
+                      className="border border-purple text-white px-5 py-3 rounded-lg mb-4"
                     >
                       <div className="flex items-center first-letter: justify-between">
                         <div className=" flex items-center  space-x-1 justify-center">
@@ -66,7 +66,7 @@ const AboutMe = () => {
         <div className="mt-8 flex justify-center md:justify-end items-center">
           <a
             data-aos="zoom-out-up"
-            className="bg-white text-deep-blue rounded-md py-3 px-7 font-semibold hover:bg-white hover:text-purple shadow-md hover:shadow-purple transition duration-500 font-mont ml-3 hover:scale-10"
+            className=" border border-purple  rounded-md py-3 px-7 font-semibold hover:bg-white hover:text-purple shadow-md hover:shadow-purple transition duration-500 font-mont ml-3 hover:scale-10"
             href={constants.resume}
             download
           >

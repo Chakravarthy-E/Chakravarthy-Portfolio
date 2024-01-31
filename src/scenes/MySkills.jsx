@@ -18,7 +18,7 @@ const MySkills = () => {
               <div
                 key={index}
                 data-aos="zoom-out-up"
-                className="flex justify-center w-56 items-center bg-purple rounded-lg px-3 py-3 space-x-3 mb-4 md:mb-0 md:w-1/4"
+                className="flex justify-center w-56 items-center border border-purple rounded-lg px-3 py-3 space-x-3 mb-4 md:mb-0 md:w-1/4"
               >
                 <img src={skill.image} alt={skill.name} className="w-10" />
                 <p className="text-sm">{skill.name}</p>

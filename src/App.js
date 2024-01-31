@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import NavBar from "./scenes/Navbar";
 import Landing from "./scenes/Landing";
-import LineGradient from "./components/LineGradient";
 import MySkills from "./scenes/MySkills";
 import Projects from "./scenes/Projects";
 import { motion } from "framer-motion";
@@ -22,7 +21,7 @@ function App() {
   }, []);
 
   return (
-    <div className="app  ">
+    <div className="app">
       <NavBar
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}
@@ -74,7 +73,6 @@ function App() {
           <Contact />
         </motion.div>
       </div>
-      <LineGradient />
       <Footer />
     </div>
   );

@@ -39,11 +39,11 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
     };
   }, []);
 
-  const navbarBackground = isScrolled ? "bg-black" : "";
+  const navbarBackground = isScrolled ? " bg-bgColor" : "";
 
   return (
     <nav
-      className={`z-40 w-full fixed  font-mont top-0 py-6 pt-3 pb-2 ${navbarBackground}`}
+      className={`z-40 w-full fixed  font-mono top-0 py-6 pt-3 pb-2 ${navbarBackground}`}
     >
       <div className="flex items-center justify-between mx-auto w-5/6">
         <AnchorLink onClick={() => setSelectedPage("home")} href="#home">
@@ -56,7 +56,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
 
         {/* Desktop nav */}
         {isAbovesSmallScreens ? (
-          <div className="flex justify-between gap-12 font-opansans text-base font-semibold ">
+          <div className="flex justify-between gap-12 font-opansans text-lg font-semibold ">
             <Link
               page="Home"
               selectedPage={selectedPage}

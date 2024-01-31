@@ -1,6 +1,5 @@
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
-import { AiOutlineSend } from "react-icons/ai";
 
 const Contact = () => {
   const {
@@ -110,11 +109,10 @@ const Contact = () => {
             )}
 
             <button
-              className="p-5 bg-white gap-3 flex items-center space-x-5 rounded-md font-semibold text-deep-blue mt-2 hover:bg-white hover:text-purple shadow-md hover:shadow-purple transition duration-500 font-mont tracking-wide ml-1 "
+              className=" border border-purple my-3  flex items-center space-x-2 rounded-md py-3 px-7 font-semibold hover:bg-white hover:text-purple shadow-md hover:shadow-purple transition duration-500 font-mont ml-3 hover:scale-10"
               type="submit"
             >
               SEND ME A MESSAGE
-              <AiOutlineSend size={20} />
             </button>
           </form>
         </motion.div>
