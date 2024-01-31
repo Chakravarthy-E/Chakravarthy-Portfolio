@@ -1,6 +1,15 @@
 import * as images from "../assets";
 export const ProjectsInfo = [
   {
+    name: "EazyCart",
+    image: images.car_rental,
+    demo: "",
+    description:
+      "Next.js-based ecommerce app delivers a seamless shopping experience with fast-loading pages, dynamic product displays, and secure checkout, empowering users to browse, shop, and transact effortlessly while enjoying a modern and responsive interface.",
+    github: "https://github.com/Chakravarthy-E/EazyCart",
+    tech: "Next.js",
+  },
+  {
     name: "Car rental Application",
     image: images.car_rental,
     demo: "https://speedy-cars.netlify.app/",
@@ -9,6 +18,7 @@ export const ProjectsInfo = [
     github: "https://github.com/Chakravarthy-E/car_rental_app",
     tech: "React",
   },
+
   {
     name: "CRM Application",
     image: images.crm,

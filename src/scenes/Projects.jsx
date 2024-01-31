@@ -20,11 +20,11 @@ const Projects = () => {
             key={project.name}
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
-            className="max-w-md mx-auto px-6 py-4 w-full md:w-[48%] border border-purple rounded-md shadow-lg overflow-hidden my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out hover:shadow-xl"
+            className="max-w-md mx-auto px-6 py-4 w-full md:w-[58%] border border-purple rounded-md shadow-lg overflow-hidden my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out hover:shadow-xl"
           >
             <div className="flex font-mont justify-between items-center space-x-3 ">
               <button className="text-purple">
-                <GoFileDirectory size={30} />
+                <GoFileDirectory size={35} />
               </button>
               <div>
                 <span className="inline-block bg-purple-500 rounded-lg  py-2 text-sm font-semibold hover:text-purple text-white mr-2 mb-1 hover:bg-purple-700">
