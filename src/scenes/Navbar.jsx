@@ -48,7 +48,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
       <div className="flex items-center justify-between mx-auto w-5/6">
         <AnchorLink onClick={() => setSelectedPage("home")} href="#home">
           <h4
-            className={`font-mont text-2xl italic hover:text-purple text-white font-bold`}
+            className={`font-mono text-2xl  hover:text-purple text-white font-bold`}
           >
             {" <Chakravarthy />"}
           </h4>
