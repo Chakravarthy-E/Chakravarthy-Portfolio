@@ -66,7 +66,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
               setSelectedPage={setSelectedPage}
             />
             <Link
-              page="About"
+              page="Timeline"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
@@ -113,12 +113,12 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
                 setSelectedPage={setSelectedPage}
               />
               <Link
-                page="About"
+                page="Services"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
               <Link
-                page="Services"
+                page="Timeline"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />

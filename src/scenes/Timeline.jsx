@@ -5,7 +5,7 @@ import { constants } from "../utils/constants";
 
 const Timeline = () => {
   return (
-    <section id="about" className="py-16 md:py-10">
+    <section id="timeline" className="py-16 md:py-10">
       <div className="max-w-screen-xl mx-auto px-4 ">
         <h1 className=" text-white text-center font-bold text-4xl py-14 uppercase">
           My <span className="text-purple">Timeline</span>
