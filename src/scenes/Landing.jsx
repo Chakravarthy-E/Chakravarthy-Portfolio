@@ -28,11 +28,13 @@ const Landing = ({ setSelectedPage }) => {
     >
       <div className="z-30 flex flex-col items-center justify-center space-y-6 text-center h-full">
         <div className="mb-6">
-        <p className="text-start text-xl my-4 font-mono text-purple font-semibold">Welcome, I'm</p>
+          <p className="text-start text-xl my-4  text-purple font-semibold">
+            Hello, I'm
+          </p>
           <div>
             {name.map((el, i) => (
               <motion.span
-                className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-mont font-bold"
+                className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl  font-bold"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{
@@ -46,12 +48,12 @@ const Landing = ({ setSelectedPage }) => {
             ))}
           </div>
 
-          <div className="text-sm sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-mont font-semibold text-purple uppercase">
+          <div className="text-sm sm:text-lg md:text-xl lg:text-2xl xl:text-3xl  font-semibold text-purple uppercase">
             <TypeWriter
               options={{
                 strings: [
-                  "A Software Engineer",
-                  "A Problem Solver",
+                  "A Software Developer",
+                  "A Frontend Developer",
                   "A Full Stack Developer",
                 ],
                 pauseFor: 2000,

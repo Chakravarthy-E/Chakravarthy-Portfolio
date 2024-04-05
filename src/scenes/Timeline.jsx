@@ -3,12 +3,12 @@ import { IoMdSchool } from "react-icons/io";
 import { FaBuilding } from "react-icons/fa";
 import { constants } from "../utils/constants";
 
-const AboutMe = () => {
+const Timeline = () => {
   return (
     <section id="about" className="py-16 md:py-10">
-      <div className="max-w-screen-xl mx-auto px-4 font-mont">
-        <h1 className=" text-white  text-center font-bold text-4xl py-14 uppercase">
-          About <span className="text-purple">Me</span>
+      <div className="max-w-screen-xl mx-auto px-4 ">
+        <h1 className=" text-white text-center font-bold text-4xl py-14 uppercase">
+          My <span className="text-purple">Timeline</span>
         </h1>
         <div className="flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-10">
           <div className="w-full md:w-1/2">
@@ -37,7 +37,7 @@ const AboutMe = () => {
               </div>
             ))}
           </div>
-          <div className="w-full md:w-1/2 font-mont">
+          <div className="w-full md:w-1/2 ">
             <h1 className="text-xl font-bold mb-1 text-white">Education</h1>
             {AboutInfo.map((aboutme, index) => (
               <div key={index} className="space-y-4">
@@ -78,4 +78,4 @@ const AboutMe = () => {
   );
 };
 
-export default AboutMe;
+export default Timeline;

@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -12,6 +13,7 @@ body,
 #root,
 .app {
   height: 100%;
-  background-color: #120E26;
+  background-color: #120e26;
   @apply text-white;
+  font-family: "Outfit", sans-serif;
 }

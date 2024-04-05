@@ -4,7 +4,7 @@ import { SkillsInfo } from "../utils/skillsInfo";
 const MySkills = () => {
   return (
     <section id="skills" className="py-4 md:py-14">
-      <div className="max-w-screen-xl mx-auto px-4 font-mont">
+      <div className="max-w-screen-xl mx-auto px-4 ">
         <div className="md:flex md:justify-center md:items-center md:gap-16 mt-10">
           <div>
             <p className="font-mont text-center font-bold text-4xl py-14 mt-7">
@@ -12,7 +12,9 @@ const MySkills = () => {
             </p>
           </div>
         </div>
-        <div className="flex justify-center"> {/* Updated line */}
+        <div className="flex justify-center">
+          {" "}
+          {/* Updated line */}
           <div className="flex flex-wrap justify-center items-center gap-2">
             {SkillsInfo.map((skill, index) => (
               <div

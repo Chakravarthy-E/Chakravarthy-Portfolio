@@ -8,21 +8,21 @@ const Projects = () => {
   return (
     <section id="projects" className="py-4 ">
       <div>
-        <p className="font-mont text-center font-bold text-4xl py-14">
+        <p className=" text-center font-bold text-4xl py-14">
           MY <span className="text-purple">PROJECTS</span>
         </p>
       </div>
 
       {/* Projects */}
-      <div className="flex flex-wrap justify-center m-2">
+      <div className="grid lg:grid-cols-3 gap-3 md:grid-cols-3 sm:grid-cols-2 grid-col-1  m-2">
         {ProjectsInfo.map((project) => (
           <motion.div
             key={project.name}
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
-            className="max-w-md mx-auto px-6 py-4 w-full md:w-[58%] border border-purple rounded-md shadow-lg overflow-hidden my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out hover:shadow-xl"
+            className="max-w-md mx-auto px-6 py-4 w-full  border border-purple rounded-md shadow-lg overflow-hidden my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out hover:shadow-xl"
           >
-            <div className="flex font-mont justify-between items-center space-x-3 ">
+            <div className="flex  justify-between items-center space-x-3 ">
               <button className="text-purple">
                 <GoFileDirectory size={35} />
               </button>
@@ -48,12 +48,12 @@ const Projects = () => {
               </div>
             </div>
             <div className=" py-1">
-              <div className="font-sm font-mont text-xl text-white text-start mb-2">
+              <div className="font-sm  text-xl text-white text-start mb-2">
                 {project.name}
               </div>
-              <p className="text-gray-400 font-mont text-base">{project.description}</p>
+              <p className="text-gray-400  text-base">{project.description}</p>
             </div>
-            <div className="font-sm font-mono flex items-end justify-end text-sm text-white text-end mb-2 px-4">
+            <div className="font-sm  flex items-end justify-end text-sm text-white text-end mb-2 px-4">
               {project.tech}
             </div>
           </motion.div>

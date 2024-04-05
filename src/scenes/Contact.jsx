@@ -31,7 +31,7 @@ const Contact = () => {
         className="flex justify-start w-full"
       >
         <div>
-          <p className="font-mont font-bold text-4xl text-purple py-14">
+          <p className=" font-bold text-4xl text-purple py-14">
             <span className="text-white">CONTACT ME</span> TO GET STARTED
           </p>
         </div>

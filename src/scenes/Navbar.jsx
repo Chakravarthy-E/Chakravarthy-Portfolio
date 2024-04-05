@@ -43,22 +43,25 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
 
   return (
     <nav
-      className={`z-40 w-full fixed  font-mono top-0 py-6 pt-3 pb-2 ${navbarBackground}`}
+      className={`z-40 w-full fixed   top-0 py-6 pt-3 pb-2 ${navbarBackground}`}
     >
       <div className="flex items-center justify-between mx-auto w-5/6">
         <AnchorLink onClick={() => setSelectedPage("home")} href="#home">
-          <h4
-            className={`font-mono text-2xl  hover:text-purple text-white font-bold`}
-          >
+          <h4 className={` text-xl hover:text-purple text-white font-bold`}>
             {" <Chakravarthy />"}
           </h4>
         </AnchorLink>
 
         {/* Desktop nav */}
         {isAbovesSmallScreens ? (
-          <div className="flex justify-between gap-12 font-opansans text-lg font-semibold ">
+          <div className="flex justify-between gap-12  text-lg font-semibold ">
             <Link
               page="Home"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
+            <Link
+              page="Services"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
@@ -111,6 +114,11 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
               />
               <Link
                 page="About"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
+              <Link
+                page="Services"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
