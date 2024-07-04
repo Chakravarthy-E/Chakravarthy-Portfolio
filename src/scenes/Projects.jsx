@@ -9,7 +9,7 @@ const Projects = () => {
     <section id="projects" className="py-4 ">
       <div>
         <p className=" text-center font-bold text-4xl py-14">
-          MY <span className="text-purple">PROJECTS</span>
+          <span className="text-purple">PROJECTS</span>
         </p>
       </div>
 
@@ -53,8 +53,10 @@ const Projects = () => {
               </div>
               <p className="text-gray-400  text-base">{project.description}</p>
             </div>
-            <div className="font-sm  flex items-end justify-end text-sm text-white text-end mb-2 px-4">
-              {project.tech}
+            <div className="font-sm  flex items-start justify-start text-sm text-white ">
+              {project.tech.map((skill) => (
+                <span className="m-2">{skill}</span>
+              ))}
             </div>
           </motion.div>
         ))}

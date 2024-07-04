@@ -26,7 +26,7 @@ const Landing = ({ setSelectedPage }) => {
       id="home"
       className="flex flex-col items-center justify-center h-[100vh] py-5"
     >
-      <div className="z-30 flex flex-col items-center justify-center space-y-6 text-center h-full">
+      <div className="z-30 flex flex-col items-center justify-center space-y-3 text-center h-full">
         <div className="mb-6">
           <p className="text-start text-xl my-4  text-purple font-semibold">
             Hello, I'm
@@ -63,6 +63,13 @@ const Landing = ({ setSelectedPage }) => {
               }}
             />
           </div>
+        </div>
+        <div className="w-1/2">
+          <p>
+            I am a FullStack Software Engineer, specialized in web applications
+            development using JavaScript frameworks. I create and contribute to
+            amazing web applications making the internet a better place.
+          </p>
         </div>
       </div>
       <div className=" flex animate-bounce text-purple  items-end justify-end">

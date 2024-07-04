@@ -14,7 +14,7 @@ const Footer = () => {
           </div>
           <div className=" text-base text-white flex align-middle  items-center space-x-2">
             <CiLocationOn size={35} />
-            <span>Puttaparthy, Andhra Pradesh</span>
+            <span>Bangalore, Karnataka</span>
           </div>
           <div className="flex justify-start">
             <SocialMediaIcons />

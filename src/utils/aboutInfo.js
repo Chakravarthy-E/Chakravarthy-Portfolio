@@ -2,6 +2,13 @@ export const AboutInfo = [
   {
     experience: [
       {
+        company: "Resenese Private Limited",
+        role: "Freelance Next.js Developer",
+        description:
+          "As a freelance Next.js developer at Resencee Private Limited, I contributed to the development and optimization of their admin panel. My responsibilities included fixing bugs, creating modals, and improving overall application performance. Through these tasks, I ensured a seamless user experience and enhanced the efficiency of the admin panel.",
+        duration: "Apr 2024 - Present",
+      },
+      {
         company: "Gamersback Pvt Ltd",
         role: "Frontend Developer Intern",
         description:
@@ -31,6 +38,6 @@ export const AboutInfo = [
   },
   {
     resume:
-      "https://docs.google.com/document/d/1Z-zIymazcok1OIge71mnQIAFL87GvlVUGRaas2KhVMI/edit?usp=drive_link",
+      "https://drive.google.com/file/d/1ZOvsFIP84J8N3TMbwbZWOHMKWPe4RXja/view?usp=sharing",
   },
 ];

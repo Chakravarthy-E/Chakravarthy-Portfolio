@@ -7,7 +7,8 @@ import { motion } from "framer-motion";
 import Footer from "./scenes/Footer";
 import Contact from "./scenes/Contact";
 import Services from "./scenes/Services";
-import Timeline from "./scenes/Timeline";
+import Experience from "./scenes/Experience";
+import About from "./scenes/About";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -41,7 +42,16 @@ function App() {
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
-          onViewportEnter={() => setSelectedPage("home")}
+          onViewportEnter={() => setSelectedPage("about")}
+        >
+          <About setSelectedPage={setSelectedPage} />
+        </motion.div>
+      </div>
+      <div className="w-5/6 mx-auto md:h-full">
+        <motion.div
+          margin="0 0 -200px 0"
+          amount="all"
+          onViewportEnter={() => setSelectedPage("services")}
         >
           <Services setSelectedPage={setSelectedPage} />
         </motion.div>
@@ -51,9 +61,9 @@ function App() {
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
-          onViewportEnter={() => setSelectedPage("home")}
+          onViewportEnter={() => setSelectedPage("experience")}
         >
-          <Timeline setSelectedPage={setSelectedPage} />
+          <Experience setSelectedPage={setSelectedPage} />
         </motion.div>
       </div>
 
