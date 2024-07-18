@@ -13,7 +13,7 @@ body,
 #root,
 .app {
   height: 100%;
-  background-color: #120e26;
+  background-color: #000000;
   @apply text-white;
   font-family: "Outfit", sans-serif;
 }

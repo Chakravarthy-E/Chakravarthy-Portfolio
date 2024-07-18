@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaAngleDown } from "react-icons/fa";
 import TypeWriter from "typewriter-effect";
+import SocialMediaIcons from "../components/SocialMediaIcons";
 
 const Landing = ({ setSelectedPage }) => {
   const name = [
@@ -72,6 +73,7 @@ const Landing = ({ setSelectedPage }) => {
           </p>
         </div>
       </div>
+      <SocialMediaIcons />
       <div className=" flex animate-bounce text-purple  items-end justify-end">
         <FaAngleDown size={35} />
       </div>

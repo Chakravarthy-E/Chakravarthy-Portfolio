@@ -116,19 +116,6 @@ const Contact = () => {
             </button>
           </form>
         </motion.div>
-
-        {/* <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{ duration: 0.5 }}
-        variants={{
-          hidden: { opacity: 0, y: 50 },
-          visible: { opacity: 1, y: 0 },
-        }}
-        className="basis-1/2 flex justify-center">
-        <img src={contact3} alt="contact" className="mt-[-40px]" />
-      </motion.div> */}
       </div>
     </section>
   );
