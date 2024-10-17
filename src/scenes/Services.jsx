@@ -14,7 +14,7 @@ const Services = () => {
             key={service}
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
-            className="max-w-md mx-auto px-6 py-4 w-full border border-purple rounded-md shadow-lg overflow-hidden my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out hover:shadow-xl"
+            className=" mx-auto px-6 py-4 w-full border border-purple rounded-md shadow-lg overflow-hidden my-5 transform translate-y-4 hover:translate-y-0 duration-500 ease-in-out hover:shadow-xl"
           >
             <h1 className="text-center text-2xl font-semibold mb-3 ">
               {service.title}

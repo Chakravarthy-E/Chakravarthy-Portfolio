@@ -66,7 +66,7 @@ const Landing = ({ setSelectedPage }) => {
           </div>
         </div>
         <div className="w-1/2">
-          <p>
+          <p className="text-center">
             I am a FullStack Software Engineer, specialized in web applications
             development using JavaScript frameworks. I create and contribute to
             amazing web applications making the internet a better place.

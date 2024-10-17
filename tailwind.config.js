@@ -22,7 +22,7 @@ module.exports = {
         "opaque-black": "rgba(0,0,0,0.35)",
         "deep-black": "#20252E",
         navColor: "#404258",
-        purple: "#F72798",
+        purple: "#024CAA",
         bgColor: "#000000",
         "card-color": "#18122B",
       },
